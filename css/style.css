@@ -147,6 +147,9 @@ Section Text:       15px/1.7 "Droid Arabic Naskh", arial, sans-serif;
   top: 0;
   right: 0;
 }
+.cards-background {
+  background: linear-gradient(180deg, #62b7a0 36.98%, #82d3c0 53.65%);
+}
 .round {
   -webkit-border-radius: 2px !important;
   -moz-border-radius: 2px !important;
@@ -3835,7 +3838,9 @@ a.logo:hover {
    Post previews
    ============================== */
 
-.post-grid {
+.load-more-cards-btn {
+  background: #1c3830;
+  color: white;
 }
 .post-prev-img {
   margin-bottom: 23px;
