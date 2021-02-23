@@ -147,6 +147,7 @@ Section Text:       15px/1.7 "Droid Arabic Naskh", arial, sans-serif;
   top: 0;
   right: 0;
 }
+
 .cards-background {
   background: linear-gradient(180deg, #62b7a0 36.98%, #82d3c0 53.65%);
 }
@@ -3837,8 +3838,28 @@ a.logo:hover {
 /* ==============================
    Post previews
    ============================== */
+.watch-postcards-btn {
+  background: #1c3830;
+  color: white;
+}
+.watch-postcards-btn:hover {
+  background: #1c3830;
+  color: white;
+}
+.watch-postcards-btn:focus {
+  background: #1c3830;
+  color: white;
+}
 
 .load-more-cards-btn {
+  background: #1c3830;
+  color: white;
+}
+.load-more-cards-btn:hover {
+  background: #1c3830;
+  color: white;
+}
+.load-more-cards-btn:focus {
   background: #1c3830;
   color: white;
 }
