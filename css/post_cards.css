@@ -1,0 +1,40 @@
+/* These styles are just a starting point, you can play around and find stuff that works better,
+you */
+
+
+.postcards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-flow: row;
+  column-gap: 1em;
+} 
+
+
+.left-side {
+  justify-self: start;
+}
+
+.right-side {
+  justify-self: end;
+}
+
+.up-side {
+  align-self: start;
+}
+
+.down-side {
+  align-self: end;
+}
+
+.small-size {
+  width: 75%;
+}
+
+.medium-size {
+  width: 80%;
+}
+
+.large-size {
+  width: 90%;
+}
