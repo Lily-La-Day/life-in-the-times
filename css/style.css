@@ -4254,11 +4254,33 @@ a.logo:hover {
     margin-bottom: 20px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .footer-logo {
+    flex: 1 50%;
+  }
 
-@media only screen and (max-width: 300px) {
-  .footer-row {
+  .footer-logo:nth-child(3) {
+    justify-content: flex-start;
+  }
+
+  .footer-logo:nth-child(5) {
     justify-content: center;
   }
+}
+
+@media only screen and (max-width: 300px) {
+  .footer-logo {
+    flex: 1 100%;
+  }
+
+  .footer-logo:nth-child(1) {
+    justify-content: center;
+  }
+
+  .footer-logo:nth-child(3) {
+    justify-content: center;
+  }
+
   .footer-row.one {
     margin-bottom: 0;
   }
