@@ -30,63 +30,63 @@ export let postCardsArray = [
     img:".././images/cards/card10.png"
     },
         {id:11,
-    img:".././images/cards/card11.jpeg"
+    img:".././images/cards/card11.png"
     },
      {id:12,
-    img:".././images/cards/card12.jpeg"
+    img:".././images/cards/card12.png"
     },
      {id:13,
-    img:".././images/cards/card13.jpeg"
+    img:".././images/cards/card13.png"
     },
      {id:14,
-    img:".././images/cards/card14.jpeg"
+    img:".././images/cards/card14.png"
     },
      {id:15,
-    img:".././images/cards/card15.jpeg"
+    img:".././images/cards/card15.png"
     },
      {id:16,
-    img:".././images/cards/card16.jpeg"
+    img:".././images/cards/card16.png"
     },
      {id:17,
-    img:".././images/cards/card17.jpeg"
+    img:".././images/cards/card17.png"
     },
      {id:18,
-    img:".././images/cards/card18.jpeg"
+    img:".././images/cards/card18.png"
     },
      {id:19,
-    img:".././images/cards/card19.jpeg"
+    img:".././images/cards/card19.png"
     },
      {id:20,
-    img:".././images/cards/card20.jpeg"
+    img:".././images/cards/card20.png"
     },
      {id:21,
-    img:".././images/cards/card21.jpeg"
+    img:".././images/cards/card21.png"
     },
         {id:22,
-    img:".././images/cards/card22.jpeg"
+    img:".././images/cards/card22.png"
     },
      {id:23,
-    img:".././images/cards/card23.jpeg"
+    img:".././images/cards/card23.png"
     },
      {id:24,
-    img:".././images/cards/card24.jpeg"
+    img:".././images/cards/card24.png"
     },
      {id:25,
-    img:".././images/cards/card25.jpeg"
+    img:".././images/cards/card25.png"
     },
      {id:26,
-    img:".././images/cards/card26.jpeg"
+    img:".././images/cards/card26.png"
     },
      {id:27,
-    img:".././images/cards/card27.jpeg"
+    img:".././images/cards/card27.png"
     },
      {id:28,
-    img:".././images/cards/card28.jpeg"
+    img:".././images/cards/card28.png"
     },
      {id:29,
-    img:".././images/cards/card29.jpeg"
+    img:".././images/cards/card29.png"
     },
      {id:30,
-    img:".././images/cards/card30.jpeg"
+    img:".././images/cards/card30.png"
     }
 ]

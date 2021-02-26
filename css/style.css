@@ -3865,7 +3865,8 @@ a.logo:hover {
 }
 .post-prev-img {
   margin-bottom: 23px;
-  position: relative;
+  /*
+  position: relative;*/
 }
 .post-prev-img a {
   -webkit-transition: all 0.2s cubic-bezier(0.3, 0.1, 0.58, 1);
