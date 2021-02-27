@@ -46,7 +46,7 @@ function loadMore() {
   const span3= (i+1) % 10 === 0 ? " span3":"";
 
    $(content).append(
-      "<div class='post-prev-img " +  positions[i] + span3 +"'>" +
+      "<div class='post-prev-img " +  positions[i] + span3 + "'>" +
         "<div ><img class='p-cards' src='" +
         cards[i + currentIndex].img +
         "'  alt='' /></div>" +
@@ -57,8 +57,12 @@ function loadMore() {
 
   // Check if the 30 cards rendered and it will hide the button.
   if (currentIndex >= cards.length) {
-    $(loadMoreButton).hide();
+    loadMoreButton.innerHTML="Go back to the top 10"
+    loadMoreButton.removeEventListener("click",loadMore,false)
+    loadMoreButton.addEventListener("click",goBack)
+
   }
+  
   //Get each ten cards after the first load and clicking add event listener to them.
   var img = document.querySelectorAll(".p-cards");
   for (let i = 0; i < img.length; i++) {
@@ -66,6 +70,18 @@ function loadMore() {
   }
 }
 
+//This function to go back to the first ten cards
+function goBack(){
+  var img = document.querySelectorAll(".post-prev-img");
+    for (let i = 10; i < img.length; i++) {
+       img[i].remove()
+    }
+      loadMoreButton.innerHTML="Load more postcards"
+      loadMoreButton.removeEventListener("click", goBack,false)
+      //Reset the currentIndex to 10
+      currentIndex=10;
+      loadMoreButton.addEventListener("click",loadMore)
+}
 //This function will view the image.
 function showImg() {
   modal.style.display = "block";
