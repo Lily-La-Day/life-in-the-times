@@ -6,17 +6,27 @@ let content = document.querySelector(".postcards");
 //Get the load more postcards button.
 let loadMoreButton = document.querySelector(".load-more-cards-btn");
 
+//Get the video tag.
+  let video = document.querySelector('.v-play')
+
+//Get the timeLapse postcards button.
+let timeLapseButton = document.querySelector(".watch-postcards-btn");
+
 //This is the list of styles for each ten cards when reload the page
 const positions = ["side1","side2","side3","side4","side5","side6","side7","side8","side9","side10"];
 
 //  Get the model to insert the image inside the modal.
 var modal = document.getElementById("myModal");
+var modal2 = document.getElementById("myModal2");
+
 
 //Get the model image tag.
 var modalImg = document.getElementById("img01");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close2")[0];
+
 let currentIndex = 0;
 
 //Calling loadMore to the show the first ten cards when you load the page.
@@ -68,8 +78,40 @@ span.onclick = function () {
   modal.style.display = "none";
 };
 
-//THis function is to close the model when you click on the space or on the image.
+//THis function is to close the image model when you click on the space or on the image.
 modal.onclick = function () {
   modal.style.display = "none";
 };
 
+//THis function is to close the image model when you click on the space or on the image.
+span2.onclick = function () {
+  modal2.style.display = "none";
+};
+
+//THis function is to close the vide model when you click on the space or on the image.
+modal2.onclick = function () {
+  modal2.style.display = "none";
+};
+
+//When you click the button, it will call the loadTimeLapse function.
+timeLapseButton.addEventListener("click", loadTimeLapse);
+
+//This variable tracks clicks and ensure to render the video once when you click the button
+ let counter = 0
+
+ //loadTimeLapse will append video tag to the modal
+function loadTimeLapse() { 
+   modal2.style.display = "block";
+
+  if(counter <1) {
+     counter =counter+1;
+ $(modal2).append(
+      "<video controls class='video-show' "+">" +
+        "<source src='https://cdn.bitdegree.org/learn/Pexels%20Videos%203373.mp4?raw=true' type='video/mp4'" +">"+
+        "</video>"
+    );
+  } else {
+    video.style.display="none"
+  }
+  
+  };
