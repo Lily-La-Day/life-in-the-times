@@ -125,15 +125,10 @@ timeLapseButton.addEventListener("click", loadTimeLapse);
 function loadTimeLapse() { 
    modal2.style.display = "block";
 
-  if(counter <1) {
-     counter =counter+1;
+   //Add vide tag to when click the timeLapse button
  $(modal2).append(
       "<video controls class='video-show' "+">" +
         "<source src='https://cdn.bitdegree.org/learn/Pexels%20Videos%203373.mp4?raw=true' type='video/mp4'" +">"+
         "</video>"
     );
-  } else {
-    video.style.display="none"
-  }
-  
   };
