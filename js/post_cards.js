@@ -123,12 +123,5 @@ timeLapseButton.addEventListener("click", loadTimeLapse);
 
  //loadTimeLapse will append video tag to the modal
 function loadTimeLapse() { 
-   modal2.style.display = "block";
-
-   //Add vide tag to when click the timeLapse button
- $(modal2).append(
-      "<video controls class='video-show' "+">" +
-        "<source src='https://cdn.bitdegree.org/learn/Pexels%20Videos%203373.mp4?raw=true' type='video/mp4'" +">"+
-        "</video>"
-    );
+   modal2.style.display = "block";   
   };
