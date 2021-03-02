@@ -4702,6 +4702,9 @@ table.shopping-cart-table tr td {
 .main .pricing-item-inner {
   border-color: #aaa;
 }
+.pricing-item-inner {
+  border: 1px solid #eaeaea;
+  vertical-align: middle;
 
 .pricing-wrap {
   position: relative;
