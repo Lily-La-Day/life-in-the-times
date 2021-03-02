@@ -15,9 +15,15 @@ let arabic = "المادة 2 لكلو أرأي  أو أي رأي آخر، أوا
    السياسي   حق التمتع بكافة الحقوق  لوطني أو الإجتماعيوالحريات الواردة\
  في هذا الإعلان، دون أي تمييز،و اللو أرأي  أو أي رأي آخر، أوالوطني أو الإجتماعي أوأو الميلاد "
 
-let turkish = "Her şahsın öğrenim hakkı vardır. Öğrenim hiç olmazsa ilk ve temel safhalarında \
+let kurdish = "Her şahsın öğrenim hakkı vardır. Öğrenim hiç olmazsa ilk ve temel safhalarında \
 parasızdır. İlk öğretim mecburidir. Teknik ve mesleki öğretimden herkes istifade edebilmelidir. Yüksek ö\
  Öğretim insan şahs saygının kuvvetlenmesini hedef almalıdır.";
+
+
+let urdu = "Her şahsın öğrenim hakkı vardır. Öğrenim hiç olmazsa ilk ve temel safhalarında \
+parasızdır. İlk öğretim mecburidir. Teknik ve mesleki öğretimden herkes istifade edebilmelidir. Yüksek ö\
+ Öğretim insan şahs saygının kuvvetlenmesini hedef almalıdır.";
+
 
 
   for (var i = 0; i < items.length; ++i) {
@@ -38,11 +44,13 @@ function ulListClick(event) {
         langTag.innerText=english
     } else if(lang === "Arabic") {
         langTag.innerText=arabic
-    }else if(lang === "Turkish") {
-               langTag.innerText=turkish
+    }else if(lang === "Urdu") {
+               langTag.innerText=urdu
 
-    } else {
-          langTag.innerText=english
+    } else if(lang === "Kurdish") {
+          langTag.innerText=kurdish
+    } else{
+         langTag.innerText=english
     }
 };
 

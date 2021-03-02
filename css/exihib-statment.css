@@ -6,6 +6,7 @@
 }
 .l-list {
   text-align: center;
+  margin-top: 290px;
 }
 
 .p-text {
@@ -22,13 +23,10 @@
   text-align: justify;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 200px;
+  margin-bottom: 70px;
 }
 
 .l-section {
   background: linear-gradient(180deg, #2b5348 0%, #62b7a0 100%);
-}
-
-.ex-title {
-  text-align: center;
-  color: #ffffff;
 }
