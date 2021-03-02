@@ -24,6 +24,40 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
     <link rel="stylesheet" href="css/vertical-rhythm.min.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/poem-style.css">
+
+    <!--Audio Player CSS & Scripts-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#selection').on('change', function () {
+                change($(this).val());
+            });
+
+        });
+
+        function change(sourceUrl) {
+            var audio = document.getElementById("player");
+            var source = document.getElementById("mp3_src");
+            var player = document.getElementById("player");
+            if (player.style.display === "none") {
+                player.style.display = "inline";
+            }
+
+            audio.pause();
+
+            if (sourceUrl) {
+                source.src = sourceUrl;
+                audio.load();
+                audio.play();
+            }
+        }
+    </script>
+    <!-- end Audio Player CSS & Scripts -->
+
 
 </head>
 
@@ -77,42 +111,87 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
             <section class="page-section">
                 <div class="container relative">
 
-                    <div class="row">
-                        <div class="blog-item">
-
-                            <!-- Date -->
-                            <div class="blog-item-date">
-                                <span class="date-num">07</span>Feb
-                            </div>
+                    <div class="row" id="poem-1">
+                        <div class="blog-item bg-info container" id="poem-1-container">
 
                             <!-- Post Title -->
-                            <h2 class="blog-item-title font-alt"><a>Post with text only</a></h2>
+                            <div class="header-player-poem">
+                                <h2 class="blog-item-title font-alt text-center">Talking to a blank space</h2>
+                                <!-- Audio Player HTML -->
+                                <div>
+                                    <label for="selection"></label>
+                                    <select id="selection" class="btn btn-primary dropdown-toggle">
+                                        <option
+                                            value="https://drive.google.com/drive/folders/1vOZ1GoAcPjeiRGh4VivuM-fxnVASy37a">
+                                            Arabic </option>
+                                        <option value=" http://www.culturedub.com/assets/04-Forward.mp3">Flying
+                                            in
+                                            clouds</option>
+                                        <option
+                                            value="http://www.culturedub.com/assets/04-Moringa-JahYu-Remix-feat-BaNdula-1.mp3">
+                                            Chilling on beach
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-8 pull-right">
+                                    <audio id="player" controls="controls" style="display: none;">
+                                        <source id="mp3_src" src="" type="audio/mp3" />
+                                    </audio>
+                                </div>
+                            </div>
 
                             <!-- Author, Categories, Comments -->
                             <div class="blog-item-data">
-                                <a href="#"><i class="fa fa-user"></i> John Doe</a>
-                                <span class="separator">&nbsp;</span>
+
+
+
+                                <!-- <a href="#"><i class="fa fa-user"></i> John Doe</a> -->
+                                <!-- <span class="separator">&nbsp;</span>
                                 <i class="fa fa-folder-open"></i>
                                 <a href="">Design</a>, <a href="#">Branding</a>
                                 <span class="separator">&nbsp;</span>
-                                <a href="#"><i class="fa fa-comments"></i> 5 Comments</a>
+                                <a href="#"><i class="fa fa-comments"></i> 5 Comments</a> -->
                             </div>
 
+
                             <!-- Text Intro -->
-                            <div class="blog-item-body">
+                            <div class="blog-item-body text-justify" id="poem-1-body">
                                 <p>
-                                    Suspendisse accumsan interdum tellus, eu imperdiet lacus consectetur sed. Aliquam in
-                                    ligula ac lacus blandit commodo vel luctus quam. Pellentesque habitant morbi
-                                    tristique senectus et netus et malesuada fames ac turpis egestas. Cras eu ultrices
-                                    mauris.
+                                    Worry / stress / concern / highs and lows / depression / panic / thankfulness for
+                                    family, and a safe home, and food to
+                                    eat / people need help and people are scared to help / should I go close? / I feel
+                                    lost / two metre distance / panic
+                                    buying / rushing to buy toilet paper / restrictions / loss of life / people losing
+                                    loved ones, young and old / death
+                                    after death / helpless / wanting to be alone, but not alone / excited and anxious at
+                                    the same time / hiding from
+                                    children during Zoom calls / thankful for technology / time to empty the kitchen
+                                    cupboards / lots of tinned stuff /
+                                    Facetimes with little kids / my laugh gave me away /different forms of grieving / a
+                                    funeral with 20 people there / the
+                                    unknown / people have to stand and grieve on their own / broken relationships / all
+                                    cameras off / talking to a blank
+                                    space / Zoom funerals / seeing parts of the ceremony you wouldn't usually see brings
+                                    it all home / facemasks and
+                                    distance / loneliness / I realised how much we lipread / I'm smiling but nobody can
+                                    see it / smiling through the mask /
+                                    smiling to yourself / the eyes can do the talking / I can't cope with it / you have
+                                    to abide by the rules / fogged up
+                                    glasses / Tik Tok / older people having fun / I was so anxious / three young kids
+                                    and me alone / I don't sleep at night
+                                    / waking up suddenly, looking out the window / I've been forgotten / nobody has
+                                    asked me if I need any help / NHS say we
+                                    can't deal with anything else / we have been left
+
+
                                 </p>
                             </div>
 
                             <!-- Read More Link -->
-                            <div class="blog-item-foot">
+                            <!-- <div class="blog-item-foot dropup">
                                 <a class="btn btn-mod btn-round  btn-small">Read More <i
                                         class="fa fa-angle-left"></i></a>
-                            </div>
+                            </div> -->
 
                         </div>
                     </div>
@@ -892,6 +971,18 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
     <script type="text/javascript" src="js/contact-form.js"></script>
     <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
     <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
+
+    <script>
+        $(document).ready(function () {
+            $('#player').mediaelementplayer({
+                alwaysShowControls: true,
+                features: ['playpause', 'volume', 'progress'],
+                audioVolume: 'horizontal',
+                audioWidth: 400,
+                audioHeight: 120
+            });
+        });
+    </script>
 
 </body>
 
