@@ -14,6 +14,55 @@
 }
 
 #selection {
-background-color: #b3fcf0;
+            background-color: #b3fcf0;
 color: #29574e;
+}
+
+
+#player {
+    display: none;
+}
+
+
+/* The actual audio player has been hidden and a new div with icons to simulate 
+play/pause and dropdown features styled over the top */
+
+
+.playButton {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 1em;
+    width: 4em;
+    height: 2em;
+    border-radius: 3px;
+    background:rgba(255,255,255, 0.6);
+}
+
+.audioSelectionContainer h2 {
+    margin-top: 0.5em;
+}
+
+
+.audioSelectionContainer {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 2em;
+}
+
+
+.play {
+    width: 18px;
+    height: 18px;
+    border-radius: 50px;
+    font-size: 10px;
+    color:#fff;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: -0.5pt;
+    color: white;
+    background-color: black;
+
 }

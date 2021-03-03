@@ -31,33 +31,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="js/mediaelement-and-player.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#selection').on('change', function () {
-                change($(this).val());
-            });
-
-        });
-
-        function change(sourceUrl) {
-            var audio = document.getElementById("player");
-            var source = document.getElementById("mp3_src");
-            var player = document.getElementById("player");
-            if (player.style.display === "none") {
-                player.style.display = "inline";
-            }
-
-            audio.pause();
-
-            if (sourceUrl) {
-                source.src = sourceUrl;
-                audio.load();
-                audio.play();
-            }
-        }
-    </script>
-    <!-- end Audio Player CSS & Scripts -->
-
+    <script src="js/poems.js"></script>
 
 </head>
 
@@ -116,26 +90,33 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
 
                             <!-- Post Title -->
                             <div class="header-player-poem">
-                                <h2 class="blog-item-title font-alt text-center">Talking to a blank space</h2>
-                                <!-- Audio Player HTML -->
-                                <div>
+                                <div class="audioSelectionContainer">
+                                <h2 class="blog-item-title font-alt text-center">Talking to a blank space               </h2>
+                                <div class="playButton"><i class="fa fa-play play"></i><i class="fa fa-caret-down showLanguages" data-toggle="tooltip" title="Translations"></i></div>
+                                <div style="display:none;" class="audioSelection">
                                     <label for="selection"></label>
                                     <select id="selection" class="btn btn-primary dropdown-toggle">
                                         <option
-                                            value="https://drive.google.com/drive/folders/1vOZ1GoAcPjeiRGh4VivuM-fxnVASy37a">
-                                            Arabic </option>
-                                        <option value=" http://www.culturedub.com/assets/04-Forward.mp3">Flying
-                                            in
-                                            clouds</option>
+                                        selected="selected"
+                                        value="english">
+                                        English </option>
                                         <option
-                                            value="http://www.culturedub.com/assets/04-Moringa-JahYu-Remix-feat-BaNdula-1.mp3">
-                                            Chilling on beach
+                                            value="arabic">
+                                            Arabic </option>
+                                        <option value="urdu">
+                                            Urdu
+                                        </option>
+                                        <option
+                                            value="kurdish">
+                                            Kurdish
                                         </option>
                                     </select>
                                 </div>
+                            </div>
+             
                                 <div class="col-sm-8 pull-right">
-                                    <audio id="player" controls="controls" style="display: none;">
-                                        <source id="mp3_src" src="" type="audio/mp3" />
+                                    <audio id="player" controls="controls">
+                                        <source class="audioSource" id="mp3_src" src="" type="audio/mp3" />
                                     </audio>
                                 </div>
                             </div>
@@ -973,15 +954,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
     <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
 
     <script>
-        $(document).ready(function () {
-            $('#player').mediaelementplayer({
-                alwaysShowControls: true,
-                features: ['playpause', 'volume', 'progress'],
-                audioVolume: 'horizontal',
-                audioWidth: 400,
-                audioHeight: 120
-            });
-        });
+  
     </script>
 
 </body>
