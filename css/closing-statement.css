@@ -2,17 +2,6 @@
   background: #2f584d;
 }
 
-.closing-statement-title {
-  color: white;
-  text-align: center;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 54px;
-  margin-bottom: 70px;
-  margin-top: -50px;
-}
 .mwrc-link {
   color: white;
 }
@@ -28,8 +17,15 @@
   align-items: center;
   text-align: justify;
   margin-top: -30px;
+  margin-bottom: 140px;
 }
 .paragraph {
   display: flex;
   justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
 }
