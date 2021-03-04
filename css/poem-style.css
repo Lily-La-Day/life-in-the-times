@@ -2,11 +2,28 @@
     background-color: #8ad3c2;
 }
 
-#poem-1-container {
+.blog-item {
     background-color: #8ad3c2;
+    margin: 0% 10% 0% 10%;
 }
 
-#header-player-poem-1 {
+.blog-item-body {
+    padding: 0% 5% 5% 5%;
+}
+
+.blog-item-title {
+    padding: 5% 0% 0% 0%;
+}
+
+
+/* #poem-1-container {
+    background-color: #8ad3c2;
+    margin-left: 3%;
+    margin-right: 3%;
+    
+} */
+
+.blog-item-title {
     color: #29574e;
     font-weight: bold;
     align-items: start;
@@ -17,3 +34,4 @@
 background-color: #b3fcf0;
 color: #29574e;
 }
+
