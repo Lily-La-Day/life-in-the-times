@@ -7,6 +7,7 @@
   width: 120%;
 }
 
+
 .pcModalContainer,
 .pcModalContainer2 {
   display: block;
@@ -80,11 +81,13 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .postcards {
+    padding-left: 10%;
+    padding-right: 10%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
     grid-auto-flow: row;
-    column-gap: 1em;
+    column-gap: 5em;
+    row-gap: 5em;
   }
   .close2 {
     position: absolute;
@@ -114,72 +117,84 @@
     width: 40%;
     height: 40%;
   }
-  .side1 {
-    width: 345px;
-    height: 240px;
+   .side1 {
+    padding: 3%;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 15%;
+    justify-self: end;
+    align-self: end;
+    width: 89%;
   }
   .side2 {
-    width: 201px;
-    height: 143px;
-    margin-left: 110px;
-    margin-top: 10px;
+    padding: 3%;
+    margin-top: 15%;
+    justify-self: center;
+    align-self: start;
+    width: 112%;
   }
   .side3 {
-    width: 194px;
-    height: 137px;
-    margin-top: 190px;
-    margin-left: -10px;
+    padding: 3%;
+    margin-top: 10%;
+    justify-self: start;
+    align-self: end;
+    width: 92%;
   }
   .side4 {
-    width: 251px;
-    height: 178px;
-    margin-left: -130px;
-    margin-right: 200px;
-    margin-top: 0px;
+    padding: 3%;
+    margin-top: 25%;
+    justify-self: end;
+    align-self: center;
+    width: 96%;
   }
   .side5 {
-    width: 221px;
-    height: 162px;
-    margin-left: 120px;
+    padding: 3%;
+    margin-top: 7%;
+    justify-self: start;
+    align-self: center;
+    width: 90%;
   }
   .side6 {
-    width: 320px;
-    height: 209px;
-    margin-left: 90px;
-    margin-top: 15px;
+    padding: 3%;
+    margin-top: 2%;
+    margin-right: 7%;
+    justify-self: center;
+    align-self: start;
+    width: 120%;
   }
   .side7 {
-    width: 390px;
-    height: 284px;
-    margin-left: 210px;
-    margin-top: -140px;
+    padding: 3%;
+    margin-top: 7%;
+    justify-self: end;
+    align-self: center;
+    /* width: 24.375em;
+    height: 17.75em; */
   }
   .side8 {
-    width: 327px;
-    height: 222px;
-    left: 110px;
-    top: 3927px;
-    margin-top: 230px;
-    margin-left: -20px;
-    margin-bottom: 200px;
+    padding: 3%;
+    margin-bottom: 7%;
+    justify-self: start;
+    align-self: start;
+    width: 102%;
+
   }
   .side9 {
-    width: 327px;
-    height: 222px;
-    margin-top: -260px;
-    margin-left: 20px;
+    padding: 3%;
+    margin-top: 12%;
+    margin-left: 7%;
+    justify-self: center;
+    align-self: start;
+    width: 135%;
   }
   .side10 {
-    width: 210px;
-    height: 140px;
-    margin-left: 490px;
-    margin-right: 200px;
-    margin-top: -200px;
-  }
-  .span3 {
-    grid-column: 1 / span 4;
-    /* margin-left: 630px;*/
-  }
+    padding: 3%;
+    margin-top: 2%;
+    margin-right: 7%;
+    justify-self: start;
+    align-self: center;
+    width: 105%;
+  } 
+
   .video-show {
     height: 600px;
     width: 700px;
