@@ -1,34 +1,35 @@
-#poem-1-body {
-    background-color: #8ad3c2;
-}
 
-#poem-1-container {
-    background-color: #8ad3c2;
-}
-
-#header-player-poem-1 {
-    color: #29574e;
-    font-weight: bold;
-    align-items: start;
-    justify-items: start;
-}
 
 .selection {
     background-color: #b3fcf0;
     color: #29574e;
 }
 
-.selection:hover {
-    background-color: #b3fcf0;
+.blog-item {
+    background-color: #8ad3c2;
 }
 
-.selection:active {
-    background-color: #b3fcf0;
+.blog-item-body {
+    padding: 0% 5% 5% 5%; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #333333;
 }
 
-/* #player-poem-1 {
-    display: none;
-} */
+.blog-item-title {
+    color:#333333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    align-items: start;
+    justify-items: start;
+}
+
+#selection {
+background-color: #b3fcf0;
+color: #29574e;
+}
+
 
 
 /* The actual audio player has been hidden and a new div with icons to simulate 
