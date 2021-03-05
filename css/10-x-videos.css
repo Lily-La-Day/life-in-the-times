@@ -1,0 +1,189 @@
+#videos-6-in-row {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.video-row-of-6 {
+height: 659px;
+flex: 1 1 calc(100% / 6);
+}
+
+.video-row-of-6:nth-child(1) {
+background-image: url("/images/10-x-videos/image7.png");
+background-size: cover;
+}
+
+.video-row-of-6:nth-child(2) {
+background-image: url("/images/10-x-videos/image8.png");
+background-size: cover;
+}
+
+.video-row-of-6:nth-child(3) {
+background-image: url("/images/10-x-videos/image20.png");
+background-size: cover;
+}
+
+.video-row-of-6:nth-child(4) {
+background-image: url("/images/10-x-videos/image21.png");
+background-size: cover;
+}
+
+.video-row-of-6:nth-child(5) {
+background-image: url("/images/10-x-videos/image19.png");
+background-size: cover;
+}
+
+.video-row-of-6:nth-child(6) {
+background-image: url("/images/10-x-videos/image7.png");
+background-size: cover;
+}
+
+.name-video {
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 146.48%;
+/* or 53px */
+letter-spacing: 0.01em;
+/* #FFFFFF - White */
+color: #ffffff;
+padding-top: 52px;
+padding-left: 42px;
+}
+
+.watch-video {
+background: #1c3830;
+border: 1px solid #1c3830;
+box-sizing: border-box;
+border-radius: 2px;
+display: inline-block;
+width: 163px;
+height: 46px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 40px;
+margin-top: 485px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+letter-spacing: 0.02em;
+text-decoration: none;
+color: #ffffff;
+cursor: pointer;
+}
+
+#videos-4-in-row {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.video-row-of-4 {
+height: 659px;
+flex: 0 1 25%;
+}
+
+.video-row-of-4:nth-child(1) {
+background-image: url("/images/10-x-videos/image8.png");
+background-size: cover;
+}
+
+.video-row-of-4:nth-child(1):hover {
+background-image: url("/images/10-x-videos/aleena.gif");
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+background-color: aquamarine;
+}
+
+.video-row-of-4:nth-child(2) {
+background-image: url("/images/10-x-videos/image20.png");
+background-size: cover;
+}
+
+.video-row-of-4:nth-child(3) {
+background-image: url("/images/10-x-videos/image21.png");
+background-size: cover;
+}
+
+.video-row-of-4:nth-child(4) {
+background-image: url("/images/10-x-videos/image19.png");
+background-size: cover;
+}
+@media only screen and (max-width: 1250px) {
+.video-row-of-6 {
+flex: 0 25%;
+}
+
+#videos-6-in-row {
+justify-content: center;
+}
+}
+@media only screen and (max-width: 900px) {
+.video-row-of-4,
+.video-row-of-6 {
+flex: 0 1 calc(100% / 3);
+}
+}
+
+@media only screen and (max-width: 650px) {
+.video-row-of-4,
+.video-row-of-6 {
+flex: 0 1 50%;
+}
+}
+
+@media only screen and (max-width: 420px) {
+.video-row-of-4,
+.video-row-of-6 {
+flex: 0 1 100%;
+}
+}
+
+/* modal & video*/
+
+#modal-for-video {
+display: none;
+position: fixed;
+z-index: 1;
+padding-top: 40px;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgb(0, 0, 0);
+background-color: rgba(0, 0, 0, 0.9);
+}
+
+#close-modal {
+position: absolute;
+top: -40px;
+right: 0;
+}
+
+#modal-for-video > #wrapper-modal-video {
+position: relative;
+}
+
+#video-container {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 3%;
+overflow: auto;
+flex-direction: column;
+}
+
+#title-video {
+color: #ffffff;
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+}
