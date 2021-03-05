@@ -1,32 +1,58 @@
-.l-list1 {
-  display: inline-block;
-  margin: 0 10px;
-  color: #ffffff;
-  text-align: center;
-}
 .l-list {
+  color: white;
   text-align: center;
-  margin-top: 290px;
 }
-
-.p-text {
-  width: 920px;
-  height: 169px;
+.l-list1 {
+  margin: 0 20px 50px 0;
+}
+ul#list-container li {
+  display: inline-block;
+  float: none;
+}
+.ex-statement-container {
+  padding: 5% 5% 0 5%;
+  display: flex;
+}
+.ex-statement-p {
+  padding: 20px 20px 5px 20px;
   color: white;
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 15px;
   line-height: 33px;
-  display: flex;
   align-items: center;
-  text-align: justify;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 200px;
-  margin-bottom: 70px;
 }
 
+.ex-link {
+  color: white;
+}
 .l-section {
   background: linear-gradient(180deg, #2b5348 0%, #62b7a0 100%);
+}
+.page-section,
+.small-section {
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 0px 40px 0px;
+}
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+a:focus {
+  color: white;
+  text-decoration: underline;
 }

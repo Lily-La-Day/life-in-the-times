@@ -2,7 +2,7 @@
 
 let ul = document.getElementById("list-container");
 let items = ul.getElementsByTagName("li");
-let langTag = document.getElementById("p-lang");
+let langTag = document.getElementById("ex-lang");
 
 
 ul.addEventListener("click", ulListClick);
