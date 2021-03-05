@@ -13,15 +13,22 @@
     justify-items: start;
 }
 
-#selection {
-            background-color: #b3fcf0;
-color: #29574e;
+.selection {
+    background-color: #b3fcf0;
+    color: #29574e;
 }
 
+.selection:hover {
+    background-color: #b3fcf0;
+}
 
-#player {
+.selection:active {
+    background-color: #b3fcf0;
+}
+
+/* #player-poem-1 {
     display: none;
-}
+} */
 
 
 /* The actual audio player has been hidden and a new div with icons to simulate 

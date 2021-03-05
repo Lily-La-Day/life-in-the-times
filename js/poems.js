@@ -16,6 +16,36 @@ const translations = {
     kurdish:
       "audio/poems/poem-1-kurdish.m4a",
   },
+  "poem-2": {
+    language: 'english',
+    english:
+      "http://www.culturedub.com/assets/04-Forward.mp3",
+    arabic: "audio/poems/poem-1-arabic.m4a",
+    urdu:
+      "audio/poems/poem-1-urdu.mp3",
+    kurdish:
+      "audio/poems/poem-1-kurdish.m4a",
+  },
+  "poem-3": {
+    language: 'english',
+    english:
+      "http://www.culturedub.com/assets/04-Forward.mp3",
+    arabic: "audio/poems/poem-1-arabic.m4a",
+    urdu:
+      "audio/poems/poem-1-urdu.mp3",
+    kurdish:
+      "audio/poems/poem-1-kurdish.m4a",
+  },
+  "poem-4": {
+    language: 'english',
+    english:
+      "http://www.culturedub.com/assets/04-Forward.mp3",
+    arabic: "audio/poems/poem-1-arabic.m4a",
+    urdu:
+      "audio/poems/poem-1-urdu.mp3",
+    kurdish:
+      "audio/poems/poem-1-kurdish.m4a",
+  },
 }
 
 const initPlayer = () => {
