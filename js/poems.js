@@ -20,16 +20,14 @@ const translations = {
 
 const initPlayer = () => {
 
-  let lang
-  console.log(lang)
+
   // This is just a Bootstrap tooltip I've added to show "translations" on hover so that the user knows to click 
   $('[data-toggle="tooltip"]').tooltip();
 
   //On Change funcition to switch langauge
   function change(lang, poem) {
-    lang = translations[poem]['language']
-    console.log(lang)
-  };
+    translations[poem]['language'] = lang
+  }
 
   document.querySelectorAll('selection').forEach(el => el.addEventListener('change', function (e) {
     const poem = e.currentTarget.classList[0]
@@ -59,6 +57,7 @@ const initPlayer = () => {
 
     console.log(poem)
     //console.log(language)
+    const lang = translations[poem]['language']
     source.src = translations[poem][lang];
 
     if (audio.paused) {
