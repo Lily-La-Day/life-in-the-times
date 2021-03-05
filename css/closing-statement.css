@@ -1,6 +1,5 @@
 .closing-statement {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding: 5% 5% 5% 5%;
   display: flex;
   background: #2f584d;
 }
@@ -29,7 +28,6 @@ page-section,
   font-size: 1.5em;
   line-height: 33px;
   align-items: center;
-  text-align: justify;
 }
 
 a:hover {
@@ -40,4 +38,3 @@ a:focus {
   color: white;
   text-decoration: underline;
 }
-
