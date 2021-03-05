@@ -4,88 +4,78 @@
 
 // I've added the audio files to an object here rather than in the HTML, we will need to swap these for the real
 // translatings and add a seperate one for each poem :) 
+
 const translations = {
-  "poem-1-body": {
-  english:
-    "http://www.culturedub.com/assets/04-Forward.mp3",
-  arabic: "http://www.culturedub.com/assets/04-Forward.mp3",
-  urdu:
-    "http://www.culturedub.com/assets/04-Moringa-JahYu-Remix-feat-BaNdula-1.mp3",
-  kurdish:
-    "https://drive.google.com/drive/folders/1vOZ1GoAcPjeiRGh4VivuM-fxnVASy37a",
-  }
-};
+  "poem-1": {
+    language: 'english',
+    english:
+      "http://www.culturedub.com/assets/04-Forward.mp3",
+    arabic: "audio/poems/poem-1-arabic.m4a",
+    urdu:
+      "audio/poems/poem-1-urdu.mp3",
+    kurdish:
+      "audio/poems/poem-1-kurdish.m4a",
+  },
+}
 
 const initPlayer = () => {
 
-var audio = document.getElementById("player");
+  let lang
+  console.log(lang)
+  // This is just a Bootstrap tooltip I've added to show "translations" on hover so that the user knows to click 
+  $('[data-toggle="tooltip"]').tooltip();
 
-    var source = document.getElementById("mp3_src");
+  //On Change funcition to switch langauge
+  function change(lang, poem) {
+    lang = translations[poem]['language']
+    console.log(lang)
+  };
 
-    // creating a poem variable
+  document.querySelectorAll('selection').forEach(el => el.addEventListener('change', function (e) {
+    const poem = e.currentTarget.classList[0]
+    console.log(poem + "selector")
+    change($(this).val(), poem);
+  }));
+
+  // This is just reavealing the dropdown 
+  document.querySelectorAll('.showLanguages').forEach(el => el.addEventListener('click', (e) => {
+    const poem = e.currentTarget.classList[0]
+    // console.log(poem)
+    // console.log(document.getElementById("audioSelection-poem-1"))
+    document.getElementById(`audioSelection-${poem}`).style.display = 'flex'
+    document.getElementById(`showLanguages-${poem}`).style.display = 'none'
+  }));
 
 
-    // This is just a Bootstrap tooltip I've added to show "translations" on hover so that the user knows to click 
-    $('[data-toggle="tooltip"]').tooltip();
+  //toggling play/pause and the icon to match
 
-    // playing boolean so we can toggle easily 
+  const togglePlay = (e) => {
+    poem = e.currentTarget.classList[0]
+    var audio = document.getElementById(`player-${poem}`);
+    var source = document.getElementById(`mp3_src-${poem}`);
+    var play = document.getElementById(`play-${poem}`)
+    // here we access the first class name of the play button we click, which will correspond to the poem key in 
+    // the translation object
 
-    let playing = false
-    //Setting the default to English 
-    let language = 'english'
+    console.log(poem)
+    //console.log(language)
+    source.src = translations[poem][lang];
 
+    if (audio.paused) {
+      play.classList.remove('fa-play')
+      play.classList.add('fa-pause')
+      audio.load();
+      audio.play();
 
-    audio.load();
-
-    // The below needs a bit of refactoring to use variable names rather than DOM selectors and we also need to
-    // add logic so that this works for different poems and not just one. 
-
-    //On Change funcition to switch langauge
-    function change(lang) {
-      language = lang
-
+    } else {
+      play.classList.remove('fa-pause')
+      play.classList.add('fa-play')
+      audio.pause()
     }
 
-    $("#selection").on("change", function () {
-      change($(this).val());
-    });
+  }
 
-    // This is just reavealing the dropdown 
-    document.querySelector('.showLanguages').addEventListener('click', () => {
-      document.querySelector('.audioSelection').style.display = 'flex'
-      document.querySelector('.showLanguages').style.display = 'none'
-    })
-
-
-    //toggling play/pause and the icon to match
-
-    const togglePlay = (e) => {
-      // here we access the first class name of the play button we click, which will correspond to the poem key in 
-      // the translation object
-      poem = e.currentTarget.classList[0]
-      console.log(poem)
-      console.log(language)
-      source.src = translations[poem][language];
-
-      if (playing == false) {
-        document.querySelector('.play').classList.remove('fa-play')
-        document.querySelector('.play').classList.add('fa-pause')
-        audio.load();
-        audio.play();
-        playing = true
-
-      } else {
-        document.querySelector('.play').classList.remove('fa-pause')
-        document.querySelector('.play').classList.add('fa-play')
-        audio.pause()
-        playing = false
-      }
- 
-    }
-
-  document.querySelector('.play').addEventListener('click', togglePlay)
-
-
+  document.querySelectorAll('.play').forEach(el => el.addEventListener('click', togglePlay))
 };
 
 window.addEventListener("DOMContentLoaded", initPlayer);

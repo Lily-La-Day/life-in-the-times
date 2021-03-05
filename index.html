@@ -27,11 +27,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
     <link rel="stylesheet" href="css/poem-style.css">
 
     <!--Audio Player CSS & Scripts-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="js/mediaelement-and-player.min.js"></script>
-    <script src="js/poems.js"></script>
+
 
 </head>
 
@@ -91,32 +87,31 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                             <!-- Post Title -->
                             <div class="header-player-poem">
                                 <div class="audioSelectionContainer">
-                                <h2 class="blog-item-title font-alt text-center">Talking to a blank space               </h2>
-                                <div class="playButton"><i class="poem-1-body fa fa-play play"></i><i class="fa fa-caret-down showLanguages" data-toggle="tooltip" title="Translations"></i></div>
-                                <div style="display:none;" class="audioSelection">
-                                    <label for="selection"></label>
-                                    <select id="selection" class="btn btn-primary dropdown-toggle">
-                                        <option
-                                        selected="selected"
-                                        value="english">
-                                        English </option>
-                                        <option
-                                            value="arabic">
-                                            Arabic </option>
-                                        <option value="urdu">
-                                            Urdu
-                                        </option>
-                                        <option
-                                            value="kurdish">
-                                            Kurdish
-                                        </option>
-                                    </select>
+                                    <h2 class="blog-item-title font-alt text-center">Talking to a blank space </h2>
+                                    <div class="playButton"><i id="play-poem-1" class="poem-1 fa fa-play play"></i><i
+                                            class="poem-1 fa fa-caret-down showLanguages" id="showLanguages-poem-1"
+                                            data-toggle="tooltip" title="Translations"></i></div>
+                                    <div style="display:none;" id="audioSelection-poem-1">
+                                        <label for="selection"></label>
+                                        <select id="" class="btn btn-primary dropdown-toggle selection">
+                                            <option selected="selected" value="language">
+                                                English </option>
+                                            <option value="english">English</option>
+                                            <option value="arabic">
+                                                Arabic </option>
+                                            <option value="urdu">
+                                                Urdu
+                                            </option>
+                                            <option value="kurdish">
+                                                Kurdish
+                                            </option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-             
+
                                 <div class="col-sm-8 pull-right">
-                                    <audio id="player" controls="controls">
-                                        <source class="audioSource" id="mp3_src" src="" type="audio/mp3" />
+                                    <audio id="player-poem-1" controls="controls">
+                                        <source class="audioSource" id="mp3_src-poem-1" src="" type="audio/mp3" />
                                     </audio>
                                 </div>
                             </div>
@@ -953,9 +948,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
     <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
     <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
 
-    <script>
-  
-    </script>
+    <script src="js/poems.js"></script>
 
 </body>
 
