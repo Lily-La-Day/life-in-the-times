@@ -5,10 +5,13 @@
 .blog-item {
     background-color: #8ad3c2;
     margin: 0% 10% 0% 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .blog-item-body {
     padding: 0% 5% 5% 5%;
+    font-size: 18px;
+    color: #29574e;
 }
 
 .blog-item-title {
@@ -25,7 +28,8 @@
 
 .blog-item-title {
     color: #29574e;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 36px;
     align-items: start;
     justify-items: start;
 }
