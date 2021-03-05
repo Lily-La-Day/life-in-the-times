@@ -23,7 +23,7 @@ function playVideoinPopup(e) {
   $(videocontainer).append(`<div id='title-video'>${videoId}</div>`);
   $(videocontainer).append(
     "<video controls class='video-show' >" +
-      `<source src='/videos/10-x-videos/${videoId}' type='video/mp4'>` +
+      '<source src="https://www.youtube.com/watch?v=ScMzIvxBSi4" >' +
       "</video>"
   );
   let vid = document.querySelector(".video-show");
@@ -31,17 +31,18 @@ function playVideoinPopup(e) {
   vid.load();
 }
 
-let insideVideoBlocks = document.querySelectorAll(".video-row-of-6 * ");
+/* let insideVideoBlocks = document.querySelectorAll(".video-row-of-6 * ");
 console.log(insideVideoBlocks);
 insideVideoBlocks.forEach((element) =>
   element.addEventListener("mouseover", loopVideo)
-);
+); */
 let videoBlocks = document.querySelectorAll(".video-row-of-6");
 
 videoBlocks.forEach((element) =>
   element.addEventListener("mouseover", loopVideo)
 );
 function loopVideo(e) {
-  let videoId = e.target.dataset.videoid;
+  console.log(e.target);
+  let videoId = e.target.dataset.videoblock;
   console.log(`you clicked on ${videoId}`);
 }

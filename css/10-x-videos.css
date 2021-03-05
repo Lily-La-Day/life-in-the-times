@@ -98,7 +98,6 @@
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: aquamarine;
 }
 .video-row-of-4:nth-child(2) {
   background-image: url("/images/10-x-videos/image20.png");
