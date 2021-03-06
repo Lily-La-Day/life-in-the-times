@@ -1,0 +1,23 @@
+#overlay {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    mix-blend-mode: multiply;
+  }
+
+  .hero-icon-container {
+    margin: 5%;
+    padding: 5%;
+    display: inline-flex;
+    height: 60%;
+    margin-top: 10em;
+    align-items: center;
+  }
+
+  .audio-icon {
+      max-width: 3em;
+      margin-bottom: 35%;
+      max-height: 3em;
+
+      
+  }
