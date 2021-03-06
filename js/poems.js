@@ -8,8 +8,8 @@
 const translations = {
   "poem-1": {
     language: 'english',
-    english:
-      "http://www.culturedub.com/assets/04-Forward.mp3",
+    // english:
+    //   "http://www.culturedub.com/assets/04-Forward.mp3",
     arabic: "audio/poems/poem-1-arabic.m4a",
     urdu:
       "audio/poems/poem-1-urdu.mp3",
@@ -59,7 +59,7 @@ const initPlayer = () => {
     translations[poem]['language'] = lang
   }
 
-  document.querySelectorAll('selection').forEach(el => el.addEventListener('change', function (e) {
+  document.querySelectorAll('.selection').forEach(el => el.addEventListener('change', function (e) {
     const poem = e.currentTarget.classList[0]
     console.log(poem + "selector")
     change($(this).val(), poem);

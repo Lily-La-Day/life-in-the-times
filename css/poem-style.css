@@ -7,6 +7,7 @@
 
 .blog-item {
     background-color: #8ad3c2;
+    /* display: flex; */
 }
 
 .blog-item-body {
@@ -29,7 +30,6 @@
 background-color: #b3fcf0;
 color: #29574e;
 }
-
 
 
 /* The actual audio player has been hidden and a new div with icons to simulate 
