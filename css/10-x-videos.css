@@ -149,7 +149,6 @@
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 40px;
   left: 0;
   top: 0;
   width: 100%;
@@ -161,21 +160,12 @@
 
 #close-modal {
   position: absolute;
-  top: -40px;
+  top: 0;
   right: 0;
 }
 
-#modal-for-video > #wrapper-modal-video {
-  position: relative;
-}
-
-#video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 3%;
-  overflow: auto;
-  flex-direction: column;
+#wrapper-modal-video {
+  text-align: center;
 }
 
 #title-video {
@@ -183,5 +173,23 @@
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+#video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+#video-container .show-video {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
 }

@@ -2,6 +2,7 @@ let playVideoButtons = document.querySelectorAll(".watch-video");
 let modalForVideo = document.querySelector("#modal-for-video");
 let closeModal = document.querySelector("#close-modal");
 let videocontainer = document.querySelector("#video-container");
+let titleVideo = document.querySelector("#title-video");
 
 playVideoButtons.forEach((element) =>
   element.addEventListener("click", playVideoinPopup)
@@ -10,25 +11,28 @@ playVideoButtons.forEach((element) =>
 closeModal.onclick = function () {
   modalForVideo.style.display = "none";
   videocontainer.textContent = "";
+  titleVideo.textContent = "";
 };
 
 modalForVideo.onclick = function () {
   modalForVideo.style.display = "none";
   videocontainer.textContent = "";
+  titleVideo.textContent = "";
 };
 
 function playVideoinPopup(e) {
   let videoId = e.target.dataset.videoid;
   modalForVideo.style.display = "block";
-  $(videocontainer).append(`<div id='title-video'>${videoId}</div>`);
+
   $(videocontainer).append(
-    "<video controls class='video-show' >" +
-      '<source src="https://www.youtube.com/watch?v=ScMzIvxBSi4" >' +
-      "</video>"
+    `<iframe class='show-video' width='420' height='315' src='https://www.youtube.com/embed/${videoId}?autoplay=1' allow='autoplay'>` +
+      "</iframe>"
   );
-  let vid = document.querySelector(".video-show");
+
+  titleVideo.textContent = videoId;
+  /* let vid = document.querySelector(".video-show");
   vid.autoplay = true;
-  vid.load();
+  vid.load(); */
 }
 
 /* let insideVideoBlocks = document.querySelectorAll(".video-row-of-6 * ");
