@@ -1,14 +1,22 @@
 .l-list {
   color: white;
   text-align: center;
+  padding-bottom: 50px;
 }
 .l-list1 {
-  margin: 0 20px 50px 0;
+  margin: 0 20px 0;
 }
+
 ul#list-container li {
   display: inline-block;
   float: none;
+  cursor: pointer;
 }
+
+ul#list-container li:hover {
+  opacity: 0.6;
+}
+
 .ex-statement-container {
   padding: 5% 5% 0 5%;
   display: flex;
