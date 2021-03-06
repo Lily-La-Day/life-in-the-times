@@ -95,7 +95,7 @@
 
 .video-row-of-4:nth-child(1):hover {
   background-image: url("/images/10-x-videos/aleena.gif");
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
