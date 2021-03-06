@@ -38,10 +38,12 @@ ul#list-container li:hover {
 .statement-title {
   text-align: center;
   justify-self: center;
-  font-size: 36px;
+  font-size: 1.8em;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-bottom: 0;
-
-
 }
 
 .ex-link {
