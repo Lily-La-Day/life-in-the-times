@@ -1,6 +1,7 @@
 .l-list {
   color: white;
   text-align: center;
+  font-size: 14px;
   padding-bottom: 50px;
 }
 .l-list1 {
@@ -18,26 +19,37 @@ ul#list-container li:hover {
 }
 
 .ex-statement-container {
-  padding: 5% 5% 0 5%;
+  padding: 5% 10% 0 10%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .ex-statement-p {
-  padding: 20px 20px 5px 20px;
+  padding: 25px 20px 5px 20px;
   color: white;
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 22px;
   line-height: 33px;
   align-items: center;
+}
+
+.statement-title {
+  text-align: center;
+  justify-self: center;
+  font-size: 36px;
+  padding-bottom: 0;
+
+
 }
 
 .ex-link {
   color: white;
 }
-.l-section {
+/* .l-section {
   background: linear-gradient(180deg, #2b5348 0%, #62b7a0 100%);
-}
+} */
 .page-section,
 .small-section {
   width: 100%;
