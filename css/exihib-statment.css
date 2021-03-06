@@ -19,7 +19,7 @@ ul#list-container li:hover {
 }
 
 .ex-statement-container {
-  padding: 5% 10% 0 10%;
+  padding: 5% 5% 0 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
