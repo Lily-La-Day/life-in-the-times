@@ -57,7 +57,7 @@ function loadMore() {
 
   // Check if the 30 cards rendered and it will hide the button.
   if (currentIndex >= cards.length) {
-    loadMoreButton.innerHTML="Go back to the top 10"
+    loadMoreButton.innerHTML="Close"
     loadMoreButton.removeEventListener("click",loadMore,false)
     loadMoreButton.addEventListener("click",goBack)
 
@@ -105,21 +105,20 @@ modal.onclick = function () {
   modal.style.display = "none";
 };
 
-//THis function is to close the image model when you click on the space or on the image.
-span2.onclick = function () {
-  modal2.style.display = "none";
-};
+//This function is to close the image model when you click on the space or on the image.
+span2.addEventListener("click",closeVideo)
+//This function is to close the vide0 model when you click on the space or on the image.
+modal2.addEventListener("click",closeVideo)
 
-//THis function is to close the vide model when you click on the space or on the image.
-modal2.onclick = function () {
-  modal2.style.display = "none";
-};
-
+//This function closes the video play when click in the space or on the x 
+function closeVideo() {
+     modal2.style.display = "none";
+     let c = document.getElementById("v-close");
+     c.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
+}
 //When you click the button, it will call the loadTimeLapse function.
 timeLapseButton.addEventListener("click", loadTimeLapse);
 
-//This variable tracks clicks and ensure to render the video once when you click the button
- let counter = 0
 
  //loadTimeLapse will append video tag to the modal
 function loadTimeLapse() { 

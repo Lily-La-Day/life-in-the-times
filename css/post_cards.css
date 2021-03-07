@@ -79,6 +79,9 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .page-section {
+    padding: 70px 0 70px 0;
+  }
   .postcards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
@@ -86,6 +89,13 @@
     grid-auto-flow: row;
     column-gap: 1em;
   }
+  .watch-postcards-btn {
+    background: #468372;
+    color: white;
+    font-family: Poppins;
+    margin-bottom: 20px;
+  }
+
   .close2 {
     position: absolute;
     margin-top: 50px;
@@ -181,11 +191,11 @@
     /* margin-left: 630px;*/
   }
   .video-show {
-    height: 600px;
+    height: 500px;
     width: 700px;
-    margin-left: 400px;
+    margin-left: 300px;
     margin-right: auto;
-    margin-top: 10px;
+    margin-top: 100px;
   }
 }
 
@@ -193,29 +203,38 @@
    Post previews
    ============================== */
 .watch-postcards-btn {
-  background: #1c3830;
+  background: #468372;
   color: white;
+  font-family: Poppins;
 }
 .watch-postcards-btn:hover {
-  background: #1c3830;
+  background: #468372;
   color: white;
+  font-family: Poppins;
 }
 .watch-postcards-btn:focus {
-  background: #1c3830;
+  background: #468372;
   color: white;
+  font-family: Poppins;
 }
 
 .load-more-cards-btn {
   background: #1c3830;
   color: white;
+  border-radius: 5px;
+  font-family: Poppins;
 }
 .load-more-cards-btn:hover {
   background: #1c3830;
   color: white;
+  border-radius: 5px;
+  font-family: Poppins;
 }
 .load-more-cards-btn:focus {
   background: #1c3830;
   color: white;
+  border-radius: 5px;
+  font-family: Poppins;
 }
 .post-prev-img {
   margin-bottom: 23px;
@@ -292,6 +311,12 @@
   .post-prev-img img {
     max-width: 350px;
   }
+  .watch-postcards-btn {
+    background: #468372;
+    color: white;
+    font-family: Poppins;
+    margin-bottom: 20px;
+  }
 
   /* Modal Content (Image) */
   .modal-content {
@@ -326,7 +351,7 @@
     width: 80%;
     margin-left: 15px;
     margin-right: auto;
-    margin-top: 80px;
+    margin-top: 110px;
   }
 }
 
@@ -341,6 +366,12 @@
   }
   .post-prev-img img {
     max-width: 350px;
+  }
+  .watch-postcards-btn {
+    background: #468372;
+    color: white;
+    font-family: Poppins;
+    margin-bottom: 20px;
   }
 
   /* Modal Content (Image) */
@@ -375,7 +406,7 @@
     height: 50%;
     width: 80%;
     margin-left: 5px;
-    margin-right: 10px;
-    margin-top: 20px;
+    margin-right: 5px;
+    margin-top: 80px;
   }
 }
