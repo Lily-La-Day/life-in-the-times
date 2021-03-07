@@ -8,8 +8,6 @@
 const translations = {
   "poem-1": {
     language: 'english',
-    // english:
-    //   "http://www.culturedub.com/assets/04-Forward.mp3",
     arabic: "audio/poems/poem-1-arabic.m4a",
     urdu:
       "audio/poems/poem-1-urdu.mp3",
@@ -18,33 +16,27 @@ const translations = {
   },
   "poem-2": {
     language: 'english',
-    english:
-      "http://www.culturedub.com/assets/04-Forward.mp3",
-    arabic: "audio/poems/poem-1-arabic.m4a",
+    arabic: "audio/poems/poem-2-arabic.m4a",
     urdu:
-      "audio/poems/poem-1-urdu.mp3",
+      "audio/poems/poem-2-urdu.mp3",
     kurdish:
-      "audio/poems/poem-1-kurdish.m4a",
+      "audio/poems/poem-2-kurdish.m4a",
   },
   "poem-3": {
     language: 'english',
-    english:
-      "http://www.culturedub.com/assets/04-Forward.mp3",
-    arabic: "audio/poems/poem-1-arabic.m4a",
+    arabic: "audio/poems/poem-3-arabic.m4a",
     urdu:
-      "audio/poems/poem-1-urdu.mp3",
+      "audio/poems/poem-3-urdu.mp3",
     kurdish:
-      "audio/poems/poem-1-kurdish.m4a",
+      "audio/poems/poem-3-kurdish.m4a",
   },
   "poem-4": {
     language: 'english',
-    english:
-      "http://www.culturedub.com/assets/04-Forward.mp3",
-    arabic: "audio/poems/poem-1-arabic.m4a",
+    arabic: "audio/poems/poem-4-arabic.m4a",
     urdu:
-      "audio/poems/poem-1-urdu.mp3",
+      "audio/poems/poem-4-urdu.mp3",
     kurdish:
-      "audio/poems/poem-1-kurdish.m4a",
+      "audio/poems/poem-4-kurdish.m4a",
   },
 }
 
@@ -59,9 +51,8 @@ const initPlayer = () => {
     translations[poem]['language'] = lang
   }
 
-  document.querySelectorAll('.selection').forEach(el => el.addEventListener('change', function (e) {
+  document.querySelectorAll('#selection').forEach(el => el.addEventListener('change', function (e) {
     const poem = e.currentTarget.classList[0]
-    console.log(poem + "selector")
     change($(this).val(), poem);
   }));
 
