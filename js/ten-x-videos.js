@@ -1,3 +1,4 @@
+import { videoData } from "./ten-x-videos-data.js";
 let playVideoButtons = document.querySelectorAll(".watch-video");
 let modalForVideo = document.querySelector("#modal-for-video");
 let closeModal = document.querySelector("#close-modal");
@@ -28,25 +29,16 @@ function playVideoinPopup(e) {
     `<iframe class='show-video' width='420' height='315' src='https://www.youtube.com/embed/${videoId}?autoplay=1' allow='autoplay'>` +
       "</iframe>"
   );
-
-  titleVideo.textContent = videoId;
-  /* let vid = document.querySelector(".video-show");
-  vid.autoplay = true;
-  vid.load(); */
+  titleVideo.textContent = findTitleByVideoId(videoId);
 }
 
-/* let insideVideoBlocks = document.querySelectorAll(".video-row-of-6 * ");
-console.log(insideVideoBlocks);
-insideVideoBlocks.forEach((element) =>
-  element.addEventListener("mouseover", loopVideo)
-); */
-let videoBlocks = document.querySelectorAll(".video-row-of-6");
-
-videoBlocks.forEach((element) =>
-  element.addEventListener("mouseover", loopVideo)
-);
-function loopVideo(e) {
-  console.log(e.target);
-  let videoId = e.target.dataset.videoblock;
-  console.log(`you clicked on ${videoId}`);
-}
+const findTitleByVideoId = (videoId) => {
+  let titleVideo = "";
+  videoData.forEach((data) => {
+    //console.log(videoId, data.videoId, data.videoId === videoId);
+    if (data.videoId === videoId) {
+      return (titleVideo = data.titleOfVideo);
+    }
+  });
+  return titleVideo;
+};
