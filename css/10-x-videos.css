@@ -7,27 +7,30 @@
 .video-row-of-6 {
   height: 659px;
   flex: 1 1 calc(100% / 6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .video-row-of-6:nth-child(1) {
-  background-image: url("/images/10-x-videos/image7.png");
+  background-image: url("/images/10-x-videos/agnes.jpg");
   background-size: cover;
 }
 
 .video-row-of-6:nth-child(1):hover {
-  background-image: url("/images/10-x-videos/agnes.gif");
+  background-image: url("/images/10-x-videos/agnes_hover.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .video-row-of-6:nth-child(2) {
-  background-image: url("/images/10-x-videos/image8.png");
+  background-image: url("/images/10-x-videos/aleena.jpg");
   background-size: cover;
 }
 
 .video-row-of-6:nth-child(2):hover {
-  background-image: url("/images/10-x-videos/aleena.gif");
+  background-image: url("/images/10-x-videos/aleena_hover.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -51,12 +54,12 @@
 }
 
 .video-row-of-6:nth-child(5) {
-  background-image: url("/images/10-x-videos/image19.png");
+  background-image: url("/images/10-x-videos/jabin.gif");
   background-size: cover;
 }
 
 .video-row-of-6:nth-child(5):hover {
-  background-image: url("/images/10-x-videos/rosemary.gif");
+  background-image: url("/images/10-x-videos/jabin_hover.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -79,6 +82,7 @@
   color: #ffffff;
   padding-top: 52px;
   padding-left: 42px;
+  margin: 0;
 }
 
 .watch-video {
@@ -93,7 +97,7 @@
   justify-content: center;
   align-items: center;
   margin-left: 40px;
-  margin-top: 485px;
+  margin-bottom: 21px;
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
@@ -114,6 +118,9 @@
 .video-row-of-4 {
   height: 659px;
   flex: 0 1 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .video-row-of-4:nth-child(1) {
