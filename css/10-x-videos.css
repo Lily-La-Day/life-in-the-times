@@ -13,61 +13,75 @@
 }
 
 .video-row-of-6:nth-child(1) {
-  background-image: url("/images/10-x-videos/agnes.jpg");
+  background-image: url("/images/10-x-videos/agnes.png");
   background-size: cover;
+  background-position: center;
 }
 
 .video-row-of-6:nth-child(1):hover {
-  background-image: url("/images/10-x-videos/agnes_hover.gif");
+  background-image: url("/images/10-x-videos/agnes.gif");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 
 .video-row-of-6:nth-child(2) {
-  background-image: url("/images/10-x-videos/aleena.jpg");
+  background-image: url("/images/10-x-videos/aleena.png");
   background-size: cover;
+  background-position: center;
 }
 
 .video-row-of-6:nth-child(2):hover {
-  background-image: url("/images/10-x-videos/aleena_hover.gif");
+  background-image: url("/images/10-x-videos/aleena.gif");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 
 .video-row-of-6:nth-child(3) {
-  background-image: url("/images/10-x-videos/image20.png");
+  background-image: url("/images/10-x-videos/bushra.png");
   background-size: cover;
+  background-position: center;
 }
 
 .video-row-of-6:nth-child(3):hover {
   background-image: url("/images/10-x-videos/bushra.gif");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 
 .video-row-of-6:nth-child(4) {
-  background-image: url("/images/10-x-videos/image21.png");
+  background-image: url("/images/10-x-videos/fakhirya.png");
   background-size: cover;
+  background-position: center;
+}
+
+.video-row-of-6:nth-child(4):hover {
+  background-image: url("/images/10-x-videos/fakhirya.gif");
+  background-size: cover;
+  background-position: center;
 }
 
 .video-row-of-6:nth-child(5) {
-  background-image: url("/images/10-x-videos/jabin.gif");
+  background-image: url("/images/10-x-videos/jabin.png");
   background-size: cover;
+  background-position: center;
 }
 
 .video-row-of-6:nth-child(5):hover {
-  background-image: url("/images/10-x-videos/jabin_hover.gif");
+  background-image: url("/images/10-x-videos/jabin.gif");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 
 .video-row-of-6:nth-child(6) {
-  background-image: url("/images/10-x-videos/image7.png");
+  background-image: url("/images/10-x-videos/rosemary.png");
   background-size: cover;
+  background-position: center;
+}
+
+.video-row-of-6:nth-child(6):hover {
+  background-image: url("/images/10-x-videos/rosemary.gif");
+  background-size: cover;
+  background-position: center;
 }
 
 .name-video {
@@ -124,51 +138,51 @@
 }
 
 .video-row-of-4:nth-child(1) {
-  background-image: url("/images/10-x-videos/image8.png");
+  background-image: url("/images/10-x-videos/intro+1.png");
   background-size: cover;
+  background-position: center;
 }
 
 .video-row-of-4:nth-child(1):hover {
   background-image: url("/images/10-x-videos/intro+1.gif");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 
 .video-row-of-4:nth-child(2) {
-  background-image: url("/images/10-x-videos/image20.png");
+  background-image: url("/images/10-x-videos/2+3.png");
   background-size: cover;
+  background-position: center;
 }
 
 .video-row-of-4:nth-child(2):hover {
   background-image: url("/images/10-x-videos/2+3.gif");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 
 .video-row-of-4:nth-child(3) {
-  background-image: url("/images/10-x-videos/image21.png");
+  background-image: url("/images/10-x-videos/4+5.png");
   background-size: cover;
+  background-position: center;
 }
 
 .video-row-of-4:nth-child(3):hover {
   background-image: url("/images/10-x-videos/4+5.gif");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 
 .video-row-of-4:nth-child(4) {
-  background-image: url("/images/10-x-videos/image19.png");
+  background-image: url("/images/10-x-videos/6+7.png");
   background-size: cover;
+  background-position: center;
 }
 
 .video-row-of-4:nth-child(4):hover {
   background-image: url("/images/10-x-videos/6+7.gif");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 1250px) {
