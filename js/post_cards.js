@@ -24,8 +24,8 @@ var modal2 = document.getElementById("myModal2");
 var modalImg = document.getElementById("img01");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-var span2 = document.getElementsByClassName("close2")[0];
+var span = document.querySelector("#close");
+var span2 = document.querySelector("#close2");
 
 let currentIndex = 0;
 
