@@ -5,6 +5,10 @@
     mix-blend-mode: multiply;
   }
 
+  .hero {
+    background-image: linear-gradient(#2B5348,#62B7A0);
+  }
+
   .hero-icon-container {
     margin: 5%;
     padding: 5%;
@@ -17,7 +21,5 @@
   .audio-icon {
       max-width: 3em;
       margin-bottom: 35%;
-      max-height: 3em;
-
-      
+      max-height: 3em;   
   }
