@@ -1,35 +1,92 @@
 export let postCardsArray = [
-  {
-    id: 1,
-    img: "../../life-in-the-times/images/cards/card1.png",
-  },
-  { id: 2, img: "../../life-in-the-times/images/cards/card2.png" },
-  { id: 3, img: "../../life-in-the-times/images/cards/card3.png" },
-  { id: 4, img: "../../life-in-the-times/images/cards/card4.png" },
-  { id: 5, img: "../../life-in-the-times/images/cards/card5.png" },
-  { id: 6, img: "../../life-in-the-times/images/cards/card6.png" },
-  { id: 7, img: "../../life-in-the-times/images/cards/card7.png" },
-  { id: 8, img: "../../life-in-the-times/images/cards/card8.png" },
-  { id: 9, img: "../../life-in-the-times/images/cards/card9.png" },
-  { id: 10, img: "../../life-in-the-times/images/cards/card10.png" },
-  { id: 11, img: "../../life-in-the-times/images/cards/card11.png" },
-  { id: 12, img: "../../life-in-the-times/images/cards/card12.png" },
-  { id: 13, img: "../../life-in-the-times/images/cards/card13.png" },
-  { id: 14, img: "../../life-in-the-times/images/cards/card14.png" },
-  { id: 15, img: "../../life-in-the-times/images/cards/card15.png" },
-  { id: 16, img: "../../life-in-the-times/images/cards/card16.png" },
-  { id: 17, img: "../../life-in-the-times/images/cards/card17.png" },
-  { id: 18, img: "../../life-in-the-times/images/cards/card18.png" },
-  { id: 19, img: "../../life-in-the-times/images/cards/card19.png" },
-  { id: 20, img: "../../life-in-the-times/images/cards/card20.png" },
-  { id: 21, img: "../../life-in-the-times/images/cards/card21.png" },
-  { id: 22, img: "../../life-in-the-times/images/cards/card22.png" },
-  { id: 23, img: "../../life-in-the-times/images/cards/card23.png" },
-  { id: 24, img: "../../life-in-the-times/images/cards/card24.png" },
-  { id: 25, img: "../../life-in-the-times/images/cards/card25.png" },
-  { id: 26, img: "../../life-in-the-times/images/cards/card26.png" },
-  { id: 27, img: "../../life-in-the-times/images/cards/card27.png" },
-  { id: 28, img: "../../life-in-the-times/images/cards/card28.png" },
-  { id: 29, img: "../../life-in-the-times/images/cards/card29.png" },
-  { id: 30, img: "../../life-in-the-times/images/cards/card30.png" },
-];
+    {id:1,
+    img:".././life-in-the-times/images/cards/card1.jpg"
+    },
+     {id:2,
+    img:".././life-in-the-times/images/cards/card2.jpg"
+    },
+     {id:3,
+    img:".././life-in-the-times/images/cards/card3.jpg"
+    },
+     {id:4,
+    img:".././life-in-the-times/images/cards/card4.jpg"
+    },
+     {id:5,
+    img:".././life-in-the-times/images/cards/card5.jpg"
+    },
+     {id:6,
+    img:".././life-in-the-times/images/cards/card6.jpg"
+    },
+     {id:7,
+    img:".././life-in-the-times/images/cards/card7.jpg"
+    },
+     {id:8,
+    img:".././life-in-the-times/images/cards/card8.jpg"
+    },
+     {id:9,
+    img:".././life-in-the-times/images/cards/card9.jpg"
+    },
+     {id:10,
+    img:".././life-in-the-times/images/cards/card10.jpg"
+    },
+        {id:11,
+    img:".././life-in-the-times/images/cards/card11.jpg"
+    },
+     {id:12,
+    img:".././life-in-the-times/images/cards/card12.jpg"
+    },
+     {id:13,
+    img:".././life-in-the-times/images/cards/card13.jpg"
+    },
+     {id:14,
+    img:".././life-in-the-times/images/cards/card14.jpg"
+    },
+     {id:15,
+    img:".././life-in-the-times/images/cards/card15.jpg"
+    },
+     {id:16,
+    img:".././life-in-the-times/images/cards/card16.jpg"
+    },
+     {id:17,
+    img:".././life-in-the-times/images/cards/card17.jpg"
+    },
+     {id:18,
+    img:".././life-in-the-times/images/cards/card18.jpg"
+    },
+     {id:19,
+    img:".././life-in-the-times/images/cards/card19.jpg"
+    },
+     {id:20,
+    img:".././life-in-the-times/images/cards/card20.jpg"
+    },
+     {id:21,
+    img:".././life-in-the-times/images/cards/card21.jpg"
+    },
+        {id:22,
+    img:".././life-in-the-times/images/cards/card22.jpg"
+    },
+     {id:23,
+    img:".././life-in-the-times/images/cards/card23.jpg"
+    },
+     {id:24,
+    img:".././life-in-the-times/images/cards/card24.jpg"
+    },
+     {id:25,
+    img:".././life-in-the-times/images/cards/card25.jpg"
+    },
+     {id:26,
+    img:".././life-in-the-times/images/cards/card26.jpg"
+    },
+     {id:27,
+    img:".././life-in-the-times/images/cards/card27.jpg"
+    },
+     {id:28,
+    img:".././life-in-the-times/images/cards/card28.jpg"
+    },
+     {id:29,
+    img:".././life-in-the-times/images/cards/card29.jpg"
+    },
+     {id:30,
+    img:".././life-in-the-times/images/cards/card30.jpg"
+    }
+]
