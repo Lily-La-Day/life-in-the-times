@@ -47,11 +47,13 @@
   display: none;
   position: fixed;
   z-index: 1;
+  padding: 1em;
   /* padding-top: 100px; */
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  margin: 5%;
+  /* height: 100%; */
   justify-content: center;
   align-content: center;
   overflow: auto;
@@ -82,6 +84,31 @@
   cursor: pointer;
 }
 
+.video-show, .modal-image {
+  padding: 10%;
+  padding-left: 3%;
+  align-self: flex-end;
+  width: 60vw;
+  height: 60vh;
+}
+
+.modal-flex {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+
+.close-icon {
+  z-index: 2;
+  font-size: 2em;
+  padding-left: 1em;
+  color: #f1f1f1;
+  font-weight: bold;
+  transition: 0.3s;
+  padding-bottom: 0;
+}
+
 @media only screen and (max-width: 1200px) {
   *{
     font-size: 12px;
@@ -106,29 +133,6 @@
     color: white;
     font-family: Poppins;
     margin-bottom: 1.25em;
-  }
-
-  .modal-flex {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  }
-
-  
-  .close {
-    padding-left: 1em;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-
-  .modal-content {
-    display: block;
-    width: 50%;
-    max-width: 700px;
-    width: 40%;
-    height: 40%;
   }
   .side1 {
     width: 21.5625em;
@@ -194,13 +198,6 @@
   }
   .span3 {
     grid-column: 1 / span 4;
-    /* margin-left: 630px;*/
-  }
-  .video-show, .modal-image {
-    padding: 10%;
-    align-self: flex-end;
-    width: 60vw;
-    height: 60vh;
   }
 }
 
@@ -303,6 +300,26 @@
   line-height: 1.75;
 }
 
+.modal-content {
+  margin-top: 10.625em;
+  margin-left: 2.5em;
+  margin-right: 34.375em;
+  display: block;
+  width: 75%;
+  max-width: 43.75em;
+}
+
+
+.close-icon {
+  font-size: 2em;
+  padding-left: 1em;
+  color: #f1f1f1;
+  font-weight: bold;
+  transition: 0.3s;
+  padding-bottom: 0;
+}
+
+
 /*-------------------------------*/
 
 @media (max-width: 992px) {
@@ -325,23 +342,12 @@
   }
 
   /* Modal Content (Image) */
-  .modal-content {
-    margin-top: 170px;
-    margin-left: 40px;
-    margin-right: 550px;
-    display: block;
-    width: 75%;
-    max-width: 700px;
-  }
-  /* The Close Button */
-  .close {
-    padding-left: 1em;
-    align-self: flex-start;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
+
+
+  #myModal,
+  #myModal2 {
+  margin-top: 30%;
+}
 }
 
 @media (max-width: 500px) {
@@ -362,29 +368,12 @@
     font-family: Poppins;
     margin-bottom: 20px;
   }
+ 
 
-  /* Modal Content (Image) */
-  .modal-content {
-    margin-top: 170px;
-    margin-left: 5px;
-    margin-right: 550px;
-    width: 80%;
-    max-width: 700px;
+  .close-icon {
+    padding-left: 0.5em;
   }
-  /* The Close Button */
-  .close {
-    padding-left: 1em;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  .close2 {
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
+
+
 }
-
 
