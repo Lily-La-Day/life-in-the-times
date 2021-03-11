@@ -1,24 +1,24 @@
 export const videoData = [
-  { videoId: "DGQwd1_dpuc", titleOfVideo: "Agnes" },
-  { videoId: "CxwJrzEdw1U", titleOfVideo: "Aleena" },
-  { videoId: "MxcJtLbIhvs", titleOfVideo: "Bushra" },
-  { videoId: "dtR2U-KsE3g", titleOfVideo: "Comfort & Fakhirya" },
-  { videoId: "Wqx06DtYIZs", titleOfVideo: "Jabin" },
-  { videoId: "9uIk_91GQYI", titleOfVideo: "Rosemary" },
+  { videoId: "sYuqjZ7SiJk", titleOfVideo: "Agnes" },
+  { videoId: "uln1C5Tb98Y", titleOfVideo: "Aleena" },
+  { videoId: "W4AJF40Ko5c", titleOfVideo: "Bushra" },
+  { videoId: "ntt3zNB6Syw", titleOfVideo: "Comfort & Fakhirya" },
+  { videoId: "p3VUtS3PzGM", titleOfVideo: "Jabin" },
+  { videoId: "0dPt-cJxMqo", titleOfVideo: "Rosemary" },
   {
-    videoId: "HSsqzzuGTPo",
+    videoId: "9ZyoBUU6S3U",
     titleOfVideo: "Introduction & Between Two Worlds",
   },
   {
-    videoId: "6obKeeH7cQc",
+    videoId: "c_JgGiFP40c",
     titleOfVideo: "100 Words From My Heart & Campfire ",
   },
   {
-    videoId: "TRgqtaYb4sU",
+    videoId: "XSKPfXmwLrc",
     titleOfVideo: "Country of My Dreams & A Journey to Freedom",
   },
   {
-    videoId: "9Ej-0VRWmI8",
+    videoId: "dg760TiL8AY",
     titleOfVideo: "Comes the Morning Brightness & The Bubble",
   },
 ];
