@@ -171,6 +171,7 @@
 }
 
 .video-row-of-4:nth-child(1):hover {
+  background: url("/images/10-x-videos/intro+1.png") no-repeat -9999px -9999px;
   background-image: url("/images/10-x-videos/intro+1.gif");
   background-size: cover;
   background-position: center;
