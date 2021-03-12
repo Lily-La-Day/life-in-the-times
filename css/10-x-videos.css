@@ -45,6 +45,13 @@
   background-position: center;
 }
 
+.video-row-of-6:nth-child(1):before {
+  content: url("/images/10-x-videos/agnes.gif");
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
 .video-row-of-6:nth-child(1):hover {
   background-image: url("/images/10-x-videos/agnes.gif");
   background-size: cover;
@@ -55,6 +62,13 @@
   background-image: url("/images/10-x-videos/aleena.png");
   background-size: cover;
   background-position: center;
+}
+
+.video-row-of-6:nth-child(2):before {
+  content: url("/images/10-x-videos/aleena.gif");
+  width: 0;
+  height: 0;
+  visibility: hidden;
 }
 
 .video-row-of-6:nth-child(2):hover {
@@ -69,6 +83,13 @@
   background-position: center;
 }
 
+.video-row-of-6:nth-child(3):before {
+  content: url("/images/10-x-videos/bushra.gif");
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
 .video-row-of-6:nth-child(3):hover {
   background-image: url("/images/10-x-videos/bushra.gif");
   background-size: cover;
@@ -79,6 +100,13 @@
   background-image: url("/images/10-x-videos/fakhirya.png");
   background-size: cover;
   background-position: center;
+}
+
+.video-row-of-6:nth-child(4):before {
+  content: url("/images/10-x-videos/fakhirya.gif");
+  width: 0;
+  height: 0;
+  visibility: hidden;
 }
 
 .video-row-of-6:nth-child(4):hover {
@@ -93,6 +121,13 @@
   background-position: center;
 }
 
+.video-row-of-6:nth-child(5):before {
+  content: url("/images/10-x-videos/jabin.gif");
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
 .video-row-of-6:nth-child(5):hover {
   background-image: url("/images/10-x-videos/jabin.gif");
   background-size: cover;
@@ -103,6 +138,13 @@
   background-image: url("/images/10-x-videos/rosemary.png");
   background-size: cover;
   background-position: center;
+}
+
+.video-row-of-6:nth-child(6):before {
+  content: url("/images/10-x-videos/rosemary.gif");
+  width: 0;
+  height: 0;
+  visibility: hidden;
 }
 
 .video-row-of-6:nth-child(6):hover {
@@ -121,9 +163,11 @@
   letter-spacing: 0.01em;
   /* #FFFFFF - White */
   color: #ffffff;
-  padding-top: 52px;
+  padding-top: 57px;
   padding-left: 42px;
   margin: 0;
+  display: table-row;
+  height: 100%;
 }
 
 .watch-video {
@@ -169,6 +213,7 @@
   background-size: cover;
   background-position: center;
 }
+
 .video-row-of-4:nth-child(1):before {
   content: url("/images/10-x-videos/intro+1.gif");
   width: 0;
@@ -224,6 +269,13 @@
   background-image: url("/images/10-x-videos/6+7.png");
   background-size: cover;
   background-position: center;
+}
+
+.video-row-of-4:nth-child(4):before {
+  content: url("/images/10-x-videos/6+7.gif");
+  width: 0;
+  height: 0;
+  visibility: hidden;
 }
 
 .video-row-of-4:nth-child(4):hover {
