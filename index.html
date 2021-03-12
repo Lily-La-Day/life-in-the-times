@@ -78,19 +78,32 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                     <div class="w3-dropdown-hover">
                         <button id="share-button" class="w3-button">SHARE</button>
                         <div id="dropdown-content" class="w3-dropdown-content w3-bar-block w3-border">
-                            <a id="share-link" target="_blank"
-                                href="https://twitter.com/intent/tweet?url=https://life-in-the-time-exhibition.com"
+                            <a id="share-link" target="_blank" data-sharer="twitter" data-title="Amina project"
+                                data-url="https://life-in-the-time-exhibition.com"
                                 class="w3-bar-item w3-button">Twitter</a>
-                            <a id="share-link" target="_blank"
-                                href="https://www.facebook.com/sharer/sharer.php?u=https://life-in-the-time-exhibition.com"
+                            <a id="share-link" target="_blank" data-sharer="facebook"
+                                data-url="https://life-in-the-time-exhibition.com"
                                 class="w3-bar-item w3-button">Facebook</a>
                             <a id="share-link" target="_blank"
                                 href="http://pinterest.com/pin/create/button/?url=https://lily-la-day.github.io/life-in-the-times/"
                                 class="w3-bar-item w3-button">Pinterest</a>
-                            <a id="share-link" target="_blank"
-                                href="mailto:?&subject=I%20wanted%20you%20to%20see%20this%20site&body=Check-out-this-site-https://life-in-the-time-exhibition.com"
+                            <a id="share-link" target="_blank" data-sharer="email" data-title="Amina project"
+                                data-subject="Amina project" data-url="https://life-in-the-time-exhibition.com"
                                 class="w3-bar-item w3-button">Email</a>
-                            <a id="share-link" class="w3-bar-item w3-button">shareable link</a>
+                            <a id="share-link" class="w3-bar-item w3-button"
+                                onclick="document.getElementById('id01').style.display='block'">shareable link</a>
+
+                            <div id="id01" class="w3-modal">
+                                <div class="w3-modal-content">
+                                    <div class="w3-container">
+                                        <span onclick="document.getElementById('id01').style.display='none'"
+                                            class="w3-button w3-display-topright">&times;</span>
+                                        <input type="text" value="https://life-in-the-time-exhibition.com" id="myInput"
+                                            class="hide">
+                                        <button onclick="copyLink()">Copy link </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -938,6 +951,8 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
     <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
     <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
 
+    <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
+    <script type="text/javascript" src="js/share-link.js"></script>
 </body>
 
 </html>
