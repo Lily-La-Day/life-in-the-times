@@ -31,8 +31,8 @@ ul#list-container li:hover {
     line-height: 33px;
   }
 
-  .statement-title {
-    font-size: 22px;
+  #title-ex {
+    font-size: 26px;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -43,10 +43,6 @@ ul#list-container li:hover {
     font-weight: 500;
     font-size: 22px;
     line-height: 33px;
-  }
-
-  .ex-statement-p {
-    font-size: 22px;
   }
 }
 .ex-statement-container {
