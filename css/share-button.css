@@ -18,8 +18,5 @@
 
 #dropdown-content {
     background-color: #1C3830 !important;
-}
-
-#share-link:hover {
-    background-color: #78E4CE !important;
+    min-width: 85px !important;
 }
