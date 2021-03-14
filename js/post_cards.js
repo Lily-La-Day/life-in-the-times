@@ -35,7 +35,7 @@ loadMore();
 //When you click the button, it will call the loadMore function.
 loadMoreButton.addEventListener("click", loadMore);
 
-// THis function is to show the 30 cards, ten each time.
+// This function is to show the 30 cards, ten each time.
 function loadMore() {
   let maxResult = 10;
 
@@ -44,7 +44,7 @@ function loadMore() {
     /*Adding a new class to the div if the elements are ten.
     This class will make the next ten start from the start of the next column .*/
   const span3= (i+1) % 10 === 0 ? " span3":"";
-
+ 
    $(content).append(
       "<div class='post-prev-img " +  positions[i] + span3 + "'>" +
         "<img class='p-cards' src='" +
@@ -56,7 +56,7 @@ function loadMore() {
   currentIndex += maxResult;
 
   // Check if the 30 cards rendered and it will hide the button.
-  if (currentIndex >= cards.length) {
+  if (currentIndex >= cards.length-1) {
     loadMoreButton.innerHTML="Close"
     loadMoreButton.removeEventListener("click",loadMore,false)
     loadMoreButton.addEventListener("click",goBack)
@@ -66,7 +66,11 @@ function loadMore() {
   //Get each ten cards after the first load and clicking add event listener to them.
   var img = document.querySelectorAll(".p-cards");
   for (let i = 0; i < img.length; i++) {
-    img[i].addEventListener("click", showImg);
+    if(i==7 ) {
+       img[i].addEventListener("click", showOtherImg);
+    } else {
+      img[i].addEventListener("click", showImg);
+    }
   }
 }
 
@@ -88,12 +92,18 @@ function goBack(){
       loadMoreButton.addEventListener("click",loadMore);
 
 }
+
+//This function with show a different image for the card number 8 in the first 10.
+function showOtherImg () {
+      modal.style.display = "block";
+      modalImg.src = cards[cards.length-1].img;
+}
 //This function will view the image.
 function showImg() {
-  modal.style.display = "block";
-  modalImg.src = this.src;
+     modal.style.display = "block";
+     modalImg.src =this.src;
+  }
 
-}
 
 // This function is to close the modal when you click x.
 span.onclick = function () {
