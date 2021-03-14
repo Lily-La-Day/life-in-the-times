@@ -67,6 +67,11 @@ ul#list-container li:hover {
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 0;
+  font-size: 36px;
+  font-family: Poppins;
+  font-weight: bold;
+  line-height: 54px;
+  font-style: normal;
 }
 
 .ex-link {
