@@ -1,5 +1,4 @@
-document.body.click();
-document.body.addEventListener("click", playAudio);
+document.body.addEventListener("click", playAudio, { once: true });
 
 function playAudio() {
   new Audio("./audio/header/Life in the Time Header_1-2.mp3").play();
