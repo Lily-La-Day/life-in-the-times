@@ -21,11 +21,13 @@ function onLanguageClick(event) {
     let tr2 = document.querySelectorAll(".translations-lang")
     let pArray=[...tr2]
     let lArr = ["English","Arabic","Urdu", "Kurdish"];
-
+  
     for(let i = 0; i < tr2.length; i++ ) {
         tr2[i].style.display="none";
         if(lArr.indexOf(lang)==i) {
             pArray[i].style.display="block"
+              document.querySelector(".statement-title").scrollIntoView();
+
         }
     }
 };
