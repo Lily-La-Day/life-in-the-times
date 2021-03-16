@@ -80,8 +80,7 @@ function goBack(){
       //remove the last 20 cards.
        img[i].remove()
     }
-       //let h = document.getElementById("cc").href="#"+firstImageLink; 
-      loadMoreButton.innerHTML="Load more postcards"
+      loadMoreButton.innerHTML="Load more Postcards"
       loadMoreButton.removeEventListener("click", goBack,false);
       //Reset the currentIndex to 10
       currentIndex=10;
