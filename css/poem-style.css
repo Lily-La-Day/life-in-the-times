@@ -10,6 +10,11 @@
     border: 4px solid #FFFFFF;
 }
 
+.poem-item {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 .blog-item-body {
     padding: 0% 5% 5% 5%; 
     font-family: 'Poppins', sans-serif;
@@ -73,4 +78,15 @@ play/pause and dropdown features styled over the top */
     color: white;
     background-color: black;
 
+}
+
+.poem-break {
+    mix-blend-mode: soft-light;
+    border-top: 5px solid rgba(255, 255, 255, 1);
+    width: 25%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 4em;
+    margin-bottom: 4em;
+   
 }
