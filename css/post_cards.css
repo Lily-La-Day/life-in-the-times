@@ -108,7 +108,7 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  * {
+  .postcards {
     font-size: 12px;
   }
 }
