@@ -1,25 +1,32 @@
-#overlay {
-    position: absolute;
-    z-index: 0;
-    width: 100%;
-    mix-blend-mode: multiply;
-  }
+/* #overlay {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  mix-blend-mode: multiply; 
+} */
 
-  .hero {
-    background-image: linear-gradient(#2B5348,#62B7A0);
-  }
+#home {
+  background-image: url("images/header-sketches/Header-Sketch-01.jpg");
+  background: #2b5348;
+  background-repeat: no-repeat;
+  background-attachment: local;
+}
 
-  .hero-icon-container {
-    margin: 5%;
-    padding: 5%;
-    display: inline-flex;
-    height: 60%;
-    margin-top: 10em;
-    align-items: center;
-  }
+.hero {
+  background-image: linear-gradient(#2b5348, #62b7a0);
+}
 
-  .audio-icon {
-      max-width: 3em;
-      margin-bottom: 35%;
-      max-height: 3em;   
-  }
+.hero-icon-container {
+  margin: 5%;
+  padding: 5%;
+  display: inline-flex;
+  height: 60%;
+  margin-top: 10em;
+  align-items: center;
+}
+
+.audio-icon {
+  max-width: 3em;
+  margin-bottom: 35%;
+  max-height: 3em;
+}
