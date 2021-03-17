@@ -3835,7 +3835,6 @@ a.logo:hover {
   transform: translateY(-50%);
 }
 
-
 /* ==============================
    Newsletter
    ============================== */
@@ -4705,7 +4704,7 @@ table.shopping-cart-table tr td {
 .pricing-item-inner {
   border: 1px solid #eaeaea;
   vertical-align: middle;
-
+}
 .pricing-wrap {
   position: relative;
 
