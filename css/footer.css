@@ -84,7 +84,8 @@
   justify-content: flex-end;
 }
 
-#logo1 {
+#logo1,
+#logo10 {
   width: 96%;
 }
 
@@ -118,10 +119,6 @@
 
 #logo9 {
   width: 75%;
-}
-
-#logo10 {
-  width: 96%;
 }
 
 .footer-logo:nth-child(5) {
