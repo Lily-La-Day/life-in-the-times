@@ -2,8 +2,7 @@
     color: #1C3830;
     background: #1C3830;
     border-radius: 2px;
-    margin-right: 44px;
-    margin-top: 28px;
+    align-self: start;
 }
 
 #share-button{
@@ -18,12 +17,5 @@
 
 #dropdown-content {
     background-color: #1C3830 !important;
-}
-
-#share-link:hover {
-    background-color: #78E4CE !important;
-}
-
-.share-button-div {
-    margin-bottom: 35em;
+    min-width: 85px !important;
 }
