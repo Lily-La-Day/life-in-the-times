@@ -10,6 +10,11 @@
     border: 4px solid #FFFFFF;
 }
 
+.poem-section {
+    z-index: 0;
+    background-image: linear-gradient(#2b5348 20%, #62b7a0);
+}
+
 .poem-item {
     margin-bottom: 0;
     padding-bottom: 0;
