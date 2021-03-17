@@ -7,7 +7,7 @@
 
 const translations = {
   "poem-1": {
-    language: "audio/poems/poem-1-arabic.m4a",
+    language: 'arabic',
     arabic: "audio/poems/poem-1-arabic.m4a",
     urdu:
       "audio/poems/poem-1-urdu.mp3",
@@ -15,7 +15,7 @@ const translations = {
       "audio/poems/poem-1-kurdish.m4a",
   },
   "poem-2": {
-    language: 'english',
+    language: 'arabic',
     arabic: "audio/poems/poem-2-arabic.m4a",
     urdu:
       "audio/poems/poem-2-urdu.mp3",
@@ -23,7 +23,7 @@ const translations = {
       "audio/poems/poem-2-kurdish.m4a",
   },
   "poem-3": {
-    language: 'english',
+    language: 'arabic',
     arabic: "audio/poems/poem-3-arabic.m4a",
     urdu:
       "audio/poems/poem-3-urdu.mp3",
@@ -31,7 +31,7 @@ const translations = {
       "audio/poems/poem-3-kurdish.m4a",
   },
   "poem-4": {
-    language: 'english',
+    language: 'arabic',
     arabic: "audio/poems/poem-4-arabic.m4a",
     urdu:
       "audio/poems/poem-4-urdu.mp3",
@@ -55,7 +55,7 @@ const initPlayer = () => {
   // This is just reavealing the dropdown 
   document.querySelectorAll('.showLanguages').forEach(el => el.addEventListener('click', (e) => {
     const poem = e.currentTarget.classList[0]
-    // document.getElementById(`audioSelection-${poem}`).style.display = 'flex'
+    document.getElementById(`audioSelection-${poem}`).style.display = 'flex'
     document.getElementById(`showLanguages-${poem}`).style.display = 'none'
   }));
 

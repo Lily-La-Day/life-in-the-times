@@ -1,9 +1,9 @@
 
 
-.selection {
+/* .selection {
     background-color: #FFFFFF;
     color: #29574e;
-}
+} */
 
 .blog-item {
     background-color: #8ad3c2;
@@ -26,13 +26,21 @@
     justify-items: start;
 }
 
+.poem-container {
+    max-width: 1044px;
+}
+
+.poem-content {
+    max-width: 925px;
+}
+
 #selection {
-background-color: #deeee9;
-color: #29574e;
-width: 6em;
-height: 2em;
-border-width: 0px;
-border-style: none !important;
+    background-color: #ffffff9a;
+    color: #29574e;
+    width: 6em;
+    height: 2em;
+    border-width: 0px;
+    border-style: none !important;
 }
 
 
