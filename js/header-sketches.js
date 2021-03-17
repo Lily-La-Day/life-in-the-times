@@ -1,12 +1,33 @@
-document.body.click();
-document.body.addEventListener("click", playAudio);
+// document.body.click();
+
+const enterButton = document.querySelector('.enter')
+const enterContainer = document.querySelector('.enter-container')
+const whole = document.querySelector('.whole')
+enterButton.addEventListener("click", playAudio);
+
+const audio = new Audio("./audio/header/Life in the Time Header_1-2.mp3")
+
 
 function playAudio() {
-  new Audio("./audio/header/Life in the Time Header_1-2.mp3").play();
+  whole.classList.remove('hide')
+  enterContainer.classList.add('hide')
+  audio.play();
 }
+
+
+function toggleAudio() {
+  if (audio.paused){
+  audio.play();
+  } else {
+    audio.pause();
+  }
+}
+
 
 const imageSketch = document.querySelector("#home");
 imageSketch.style.backgroundImage = `url('images/header-sketches/Header-Sketch-01.jpg')`;
+document.querySelector('.audio-icon').addEventListener('click', toggleAudio)
+document.querySelector('.audio-icon').addEventListener('click', toggleAudio)
 
 let counter = 1;
 function loopSketches() {
@@ -15,6 +36,8 @@ function loopSketches() {
       counter++;
       //console.log(counter);
       imageSketch.style.backgroundImage = `url('images/header-sketches/Header-Sketch-0${counter}.jpg')`;
+      imageSketch.style.height = '80vh';
+      imageSketch.style.backgroundPosition = 'fixed';
 
       loopSketches();
     }, 5000);

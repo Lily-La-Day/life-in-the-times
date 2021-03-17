@@ -1,0 +1,28 @@
+.enter-container {
+    width: 100vw;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-image: linear-gradient(#2b5348, #62b7a0);
+}
+
+.enter {
+    color: white;
+    font-family: poppins;
+}
+
+.enter:hover {
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+    text-shadow: 2px 2px #2b5348;
+    font-family: poppins;
+}
+
+.hide {
+    display: none;
+}
+

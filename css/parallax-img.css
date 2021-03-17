@@ -1,10 +1,6 @@
 
-.cc {
-  background-color: #2F584D;
-
-}
-
 .parallax {
+
   background-image: url(".././images/paralax-image/Background-Star-Blur.svg");
   min-height: 500px;
   background-attachment: fixed;
