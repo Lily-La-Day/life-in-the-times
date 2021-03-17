@@ -7,7 +7,7 @@
 
 const translations = {
   "poem-1": {
-    language: 'english',
+    language: "audio/poems/poem-1-arabic.m4a",
     arabic: "audio/poems/poem-1-arabic.m4a",
     urdu:
       "audio/poems/poem-1-urdu.mp3",
@@ -42,10 +42,6 @@ const translations = {
 
 const initPlayer = () => {
 
-
-  // This is just a Bootstrap tooltip I've added to show "translations" on hover so that the user knows to click 
-  $('[data-toggle="tooltip"]').tooltip();
-
   //On Change funcition to switch langauge
   function change(lang, poem) {
     translations[poem]['language'] = lang
@@ -53,16 +49,13 @@ const initPlayer = () => {
 
   document.querySelectorAll('#selection').forEach(el => el.addEventListener('change', function (e) {
     const poem = e.currentTarget.classList[0]
-    console.log(poem + "selector")
     change($(this).val(), poem);
   }));
 
   // This is just reavealing the dropdown 
   document.querySelectorAll('.showLanguages').forEach(el => el.addEventListener('click', (e) => {
     const poem = e.currentTarget.classList[0]
-    // console.log(poem)
-    // console.log(document.getElementById("audioSelection-poem-1"))
-    document.getElementById(`audioSelection-${poem}`).style.display = 'flex'
+    // document.getElementById(`audioSelection-${poem}`).style.display = 'flex'
     document.getElementById(`showLanguages-${poem}`).style.display = 'none'
   }));
 
@@ -77,8 +70,6 @@ const initPlayer = () => {
     // here we access the first class name of the play button we click, which will correspond to the poem key in 
     // the translation object
 
-    console.log(poem)
-    //console.log(language)
     const lang = translations[poem]['language']
     source.src = translations[poem][lang];
 

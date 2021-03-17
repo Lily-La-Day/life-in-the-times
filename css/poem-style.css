@@ -1,7 +1,7 @@
 
 
 .selection {
-    background-color: #b3fcf0;
+    background-color: #FFFFFF;
     color: #29574e;
 }
 
@@ -27,8 +27,12 @@
 }
 
 #selection {
-background-color: #b3fcf0;
+background-color: #deeee9;
 color: #29574e;
+width: 6em;
+height: 2em;
+border-width: 0px;
+border-style: none !important;
 }
 
 
