@@ -158,6 +158,11 @@
 }
 
 @media only screen and (min-width: 500px) and (max-width: 800px) {
+  .footer-wrapper {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
   .footer-copy {
     margin-top: 10px;
   }
