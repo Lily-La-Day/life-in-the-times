@@ -1,9 +1,10 @@
 // document.body.click();
 
-const enterButton = document.querySelector('.enter')
+const enterButtons = document.querySelectorAll('.enter')
 const enterContainer = document.querySelector('.enter-container')
 const whole = document.querySelector('.whole')
-enterButton.addEventListener("click", playAudio);
+
+enterButtons.forEach(language => language.addEventListener("click", playAudio))
 
 const audio = new Audio("./audio/header/Life in the Time Header_1-2.mp3")
 
