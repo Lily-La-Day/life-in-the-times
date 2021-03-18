@@ -1,6 +1,7 @@
 #home {
   background-repeat: no-repeat;
   background-attachment: local;
+  transition: "background-image 1s ease-in-out";
 }
 
 .home-section {
@@ -19,15 +20,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
-#main{
+#main {
   z-index: 0;
   background-image: linear-gradient(#2b5348 55%, #62b7a0 20%, #2b5348);
 }
-
-
 
 .hero-icon-container {
   margin: 5%;
@@ -38,8 +36,6 @@
   margin-top: 10em;
   align-items: center;
 }
-
-
 
 .audio-icon {
   max-width: 3em;
