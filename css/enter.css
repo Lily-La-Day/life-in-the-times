@@ -1,7 +1,8 @@
 .enter-container {
-    width: 100vw;
+    max-width: 100vw;
     display: flex;
     height: 100vh;
+    justify-items: center;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -12,6 +13,20 @@
 .enter {
     color: white;
     font-family: poppins;
+    text-shadow: 1px 1px #2b5348;
+}
+
+.enter-container img {
+    width: 5em;
+    display: flex;
+    -webkit-filter: drop-shadow(2px 2px 2px  #2b5348);
+    filter: drop-shadow(2px 2px 2px  #2b5348);
+   
+
+}
+.enter-container img:hover {
+    -webkit-filter: drop-shadow(2px 2px 2px #011811);
+    filter: drop-shadow(2px 2px 2px #011811);
 }
 
 .enter:hover {
