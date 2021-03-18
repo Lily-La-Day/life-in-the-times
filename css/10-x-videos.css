@@ -13,73 +13,73 @@
 }
 
 .video-row-of-6:nth-child(1) {
-  background-image: url("/life-in-the-times/images/10-x-videos/agnes.png");
+  background-image: url("/images/10-x-videos/agnes.png");
   background-size: cover;
   background-position: center;
 }
 
 .video-row-of-6:nth-child(1):hover {
-  background-image: url("/life-in-the-times/images/10-x-videos/agnes.gif");
+  background-image: url("/images/10-x-videos/agnes.gif");
   background-size: cover;
   background-position: center;
 }
 
 .video-row-of-6:nth-child(2) {
-  background-image: url("/life-in-the-times/images/10-x-videos/aleena.png");
+  background-image: url("/images/10-x-videos/aleena.png");
   background-size: cover;
   background-position: center;
 }
 
 .video-row-of-6:nth-child(2):hover {
-  background-image: url("/life-in-the-times/images/10-x-videos/aleena.gif");
+  background-image: url("/images/10-x-videos/aleena.gif");
   background-size: cover;
   background-position: center;
 }
 
 .video-row-of-6:nth-child(3) {
-  background-image: url("/life-in-the-times/images/10-x-videos/bushra.png");
+  background-image: url("/images/10-x-videos/bushra.png");
   background-size: cover;
   background-position: center;
 }
 
 .video-row-of-6:nth-child(3):hover {
-  background-image: url("/life-in-the-times/images/10-x-videos/bushra.gif");
+  background-image: url("/images/10-x-videos/bushra.gif");
   background-size: cover;
   background-position: center;
 }
 
 .video-row-of-6:nth-child(4) {
-  background-image: url("/life-in-the-times/images/10-x-videos/fakhirya.png");
+  background-image: url("/images/10-x-videos/fakhirya.png");
   background-size: cover;
   background-position: center;
 }
 
 .video-row-of-6:nth-child(4):hover {
-  background-image: url("/life-in-the-times/images/10-x-videos/fakhirya.gif");
+  background-image: url("/images/10-x-videos/fakhirya.gif");
   background-size: cover;
   background-position: center;
 }
 
 .video-row-of-6:nth-child(5) {
-  background-image: url("/life-in-the-times/images/10-x-videos/jabin.png");
+  background-image: url("/images/10-x-videos/jabin.png");
   background-size: cover;
   background-position: center;
 }
 
 .video-row-of-6:nth-child(5):hover {
-  background-image: url("/life-in-the-times/images/10-x-videos/jabin.gif");
+  background-image: url("/images/10-x-videos/jabin.gif");
   background-size: cover;
   background-position: center;
 }
 
 .video-row-of-6:nth-child(6) {
-  background-image: url("/life-in-the-times/images/10-x-videos/rosemary.png");
+  background-image: url("/images/10-x-videos/rosemary.png");
   background-size: cover;
   background-position: center;
 }
 
 .video-row-of-6:nth-child(6):hover {
-  background-image: url("/life-in-the-times/images/10-x-videos/rosemary.gif");
+  background-image: url("/images/10-x-videos/rosemary.gif");
   background-size: cover;
   background-position: center;
 }
@@ -138,49 +138,49 @@
 }
 
 .video-row-of-4:nth-child(1) {
-  background-image: url("/life-in-the-times/images/10-x-videos/intro+1.png");
+  background-image: url("/images/10-x-videos/intro+1.png");
   background-size: cover;
   background-position: center;
 }
 
 .video-row-of-4:nth-child(1):hover {
-  background-image: url("/life-in-the-times/images/10-x-videos/intro+1.gif");
+  background-image: url("/images/10-x-videos/intro+1.gif");
   background-size: cover;
   background-position: center;
 }
 
 .video-row-of-4:nth-child(2) {
-  background-image: url("/life-in-the-times/images/10-x-videos/2+3.png");
+  background-image: url("/images/10-x-videos/2+3.png");
   background-size: cover;
   background-position: center;
 }
 
 .video-row-of-4:nth-child(2):hover {
-  background-image: url("/life-in-the-times/images/10-x-videos/2+3.gif");
+  background-image: url("/images/10-x-videos/2+3.gif");
   background-size: cover;
   background-position: center;
 }
 
 .video-row-of-4:nth-child(3) {
-  background-image: url("/life-in-the-times/images/10-x-videos/4+5.png");
+  background-image: url("/images/10-x-videos/4+5.png");
   background-size: cover;
   background-position: center;
 }
 
 .video-row-of-4:nth-child(3):hover {
-  background-image: url("/life-in-the-times/images/10-x-videos/4+5.gif");
+  background-image: url("/images/10-x-videos/4+5.gif");
   background-size: cover;
   background-position: center;
 }
 
 .video-row-of-4:nth-child(4) {
-  background-image: url("/life-in-the-times/images/10-x-videos/6+7.png");
+  background-image: url("/images/10-x-videos/6+7.png");
   background-size: cover;
   background-position: center;
 }
 
 .video-row-of-4:nth-child(4):hover {
-  background-image: url("/life-in-the-times/images/10-x-videos/6+7.gif");
+  background-image: url("/images/10-x-videos/6+7.gif");
   background-size: cover;
   background-position: center;
 }
