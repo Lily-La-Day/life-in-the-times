@@ -38,7 +38,7 @@ function loopSketches() {
       imageSketch.style.backgroundImage = `url('images/header-sketches/Header-Sketch-0${counter}.jpg')`;
       imageSketch.classList.add("back-sketch");
       imageSketch.style.height = "80vh";
-      /*  imageSketch.style.backgroundPosition = 'fixed'; */
+      /*  imageSketch.style.backgroundPosition = "fixed"; */
 
       loopSketches();
     }, 5000);
