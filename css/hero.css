@@ -19,15 +19,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
-#main{
+#main {
   z-index: 0;
   background-image: linear-gradient(#2b5348 55%, #62b7a0 20%, #2b5348);
 }
-
-
 
 .hero-icon-container {
   margin: 5%;
@@ -39,36 +36,33 @@
   align-items: center;
 }
 
-
-
 .audio-icon {
   max-width: 3em;
   margin-bottom: 35%;
   max-height: 3em;
 }
 
- @media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .home-section {
     position: relative;
-    min-height: 5vh; 
+    min-height: 5vh;
     z-index: 0;
     min-height: 40vh;
   }
   .parallax-2-container {
     position: relative;
-    min-height: 40vh; 
+    min-height: 40vh;
     background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 30vh;
     z-index: 0;
-
   }
   .audio-icon {
-  max-width: 2em;
-  margin-bottom: 35%;
-  max-height: 2em;
-}
+    max-width: 2em;
+    margin-bottom: 35%;
+    max-height: 2em;
+  }
   .main-page {
     z-index: 4;
   }
@@ -76,12 +70,9 @@
   .back-sketch {
     z-index: -1;
     max-height: 60vh !important;
-
-
   }
-   .parallax-header, .parallax-2-container  { 
+  .parallax-header,
+  .parallax-2-container {
     background-image: none;
-   }
-}  
-
-
+  }
+}
