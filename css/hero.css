@@ -2,11 +2,11 @@
   background-repeat: no-repeat;
   background-attachment: local;
   opacity: 1;
-  -webkit-transition: background 1.5s linear;
-  -moz-transition: background 1.5s linear;
-  -o-transition: background 1.5s linear;
-  -ms-transition: background 1.5s linear;
-  transition: background 1.5s linear;
+  -webkit-transition: background 3s linear;
+  -moz-transition: background 3s linear;
+  -o-transition: background 3s linear;
+  -ms-transition: background 3s linear;
+  transition: background 3s linear;
 }
 
 .home-section {
