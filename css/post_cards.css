@@ -1,0 +1,403 @@
+#myModal,
+#myModal2 {
+  display: none;
+  z-index: 1;
+}
+
+#myModal2,
+#myModal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+}
+
+.pcModalContainer,
+.pcModalContainer2 {
+  display: block;
+  z-index: 1;
+  position: absolute;
+  margin-top: 30%;
+  margin-left: 30%;
+  margin-right: 30%;
+  top: 0;
+  left: 0;
+}
+
+.p-cards {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.p-cards:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal,
+.modal2 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding: 1em;
+  left: 0;
+  top: 0;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.video-show,
+.modal-image {
+  padding: 10%;
+  padding-left: 3%;
+  align-self: flex-end;
+  width: 60vw;
+  height: 60vh;
+}
+.video-show {
+  width: 65vw;
+  height: 90vh;
+}
+.modal-flex {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.close-icon {
+  z-index: 2;
+  font-size: 2em;
+  padding-left: 1em;
+  color: #f1f1f1;
+  font-weight: bold;
+  transition: 0.3s;
+  padding-bottom: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .postcards {
+    font-size: 12px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .page-section {
+    padding: 4.375em 0 4.375em 0;
+  }
+  .postcards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-flow: row;
+    column-gap: 1em;
+  }
+  .watch-postcards-btn {
+    background: #468372;
+    color: white;
+    font-family: Poppins;
+    margin-bottom: 1.25em;
+  }
+  .side1 {
+    width: 21.5625em;
+    height: 15em;
+  }
+  .side2 {
+    width: 12.5625em;
+    height: 8.9375em;
+    margin-left: 6.875em;
+    margin-top: 0.625em;
+  }
+  .side3 {
+    width: 12.125em;
+    height: 8.5625em;
+    margin-top: 11.875em;
+    margin-left: -0.625em;
+  }
+  .side4 {
+    width: 15.6875em;
+    height: 11.125em;
+    margin-left: -8.125em;
+    margin-right: 12.5em;
+    margin-top: 0em;
+  }
+  .side5 {
+    width: 13.8125em;
+    height: 10.125em;
+    margin-left: 7.5em;
+  }
+  .side6 {
+    width: 20em;
+    height: 13.0625em;
+    margin-left: 5.625em;
+    margin-top: 0.9375em;
+  }
+  .side7 {
+    width: 24.375em;
+    height: 17.75em;
+    margin-left: 13.125em;
+    margin-top: -8.75em;
+  }
+  .side8 {
+    width: 19.4375em;
+    height: 15.875em;
+    left: 6.875em;
+    top: 245.4375em;
+    margin-top: 14.375em;
+    margin-left: -1.25em;
+    margin-bottom: 12.5em;
+  }
+  .side9 {
+    width: 20.4375em;
+    height: 13.875em;
+    margin-top: -16.25em;
+    margin-left: 1.25em;
+  }
+  .side10 {
+    width: 13.125em;
+    height: 8.75em;
+    margin-left: 30.625em;
+    margin-right: 12.5em;
+    margin-top: -12.5em;
+  }
+  .span3 {
+    grid-column: 1 / span 4;
+  }
+}
+
+/* ==============================
+   Post previews
+   ============================== */
+.watch-postcards-btn {
+  background: #468372;
+  color: white;
+  font-family: Poppins;
+}
+.watch-postcards-btn:hover {
+  background: #495f59;
+  color: white;
+  font-family: Poppins;
+}
+.watch-postcards-btn:focus {
+  background: #468372;
+  color: white;
+  font-family: Poppins;
+}
+
+.load-more-cards-btn {
+  background: #1c3830;
+  color: white;
+  border-radius: 5px;
+  font-family: Poppins;
+}
+.load-more-cards-btn:hover {
+  background: #495f59;
+  color: white;
+  border-radius: 5px;
+  font-family: Poppins;
+}
+.load-more-cards-btn:focus {
+  background: #1c3830;
+  color: white;
+  border-radius: 5px;
+  font-family: Poppins;
+}
+.post-prev-img {
+  margin-bottom: 23px;
+  /*
+  position: relative;*/
+}
+.post-prev-img a {
+  -webkit-transition: all 0.2s cubic-bezier(0.3, 0.1, 0.58, 1);
+  -moz-transition: all 0.2s cubic-bezier(0.3, 0.1, 0.58, 1);
+  -o-transition: all 0.2s cubic-bezier(0.3, 0.1, 0.58, 1);
+  -ms-transition: all 0.2s cubic-bezier(0.3, 0.1, 0.58, 1);
+  transition: all 0.2s cubic-bezier(0.3, 0.1, 0.58, 1);
+}
+.post-prev-img a:hover {
+  opacity: 0.85;
+}
+.post-prev-img img {
+  width: 100%;
+}
+.post-prev-title {
+  margin-bottom: 6px;
+  font-size: 18px;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.post-prev-title a {
+  color: #777;
+  text-decoration: none;
+
+  -webkit-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+  -moz-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+  -o-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+  -ms-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+  transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+}
+.post-prev-title a:hover {
+  color: #111;
+}
+.post-prev-info,
+.post-prev-info a {
+  margin-bottom: 15px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #aaa;
+
+  -webkit-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+  -moz-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+  -o-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+  -ms-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+  transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+}
+.post-prev-info a:hover {
+  color: #111;
+}
+.post-prev-text {
+  margin-bottom: 22px;
+  color: #777;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.modal-content {
+  margin-top: 10.625em;
+  margin-left: 2.5em;
+  margin-right: 34.375em;
+  display: block;
+  width: 75%;
+  max-width: 43.75em;
+}
+
+.close-icon {
+  font-size: 2em;
+  padding-left: 1em;
+  color: #f1f1f1;
+  font-weight: bold;
+  transition: 0.3s;
+  padding-bottom: 0;
+  margin-top: 3em;
+}
+
+/*-------------------------------*/
+
+@media (max-width: 992px) {
+  .postcards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    grid-auto-flow: row;
+    column-gap: 1.5em;
+    margin-left: 70px;
+  }
+
+  .post-prev-img img {
+    max-width: 350px;
+  }
+  .watch-postcards-btn {
+    background: #468372;
+    color: white;
+    font-family: Poppins;
+    margin-bottom: 20px;
+  }
+
+  /* Modal Content (Image) */
+  .video-show {
+    width: 80vw;
+    height: 60vh;
+  }
+  /* #myModal,
+  #myModal2 {
+    margin-top: 30%;
+  } */
+}
+
+@media (max-width: 500px) {
+  .postcards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+    align-content: center;
+    grid-auto-flow: row;
+    margin-left: 35px;
+  }
+  .video-show {
+    padding: 10%;
+    padding-left: 3%;
+    align-self: flex-end;
+    width: 70vw;
+    height: 50vh;
+  }
+  #img01 {
+    height: 250px;
+    width: 290px;
+  }
+  /* #myModal2 {
+    margin-left: 9%;
+  } */
+  #myModal {
+    width: 70%;
+    height: 50%;
+  }
+
+  .post-prev-img img {
+    max-width: 350px;
+  }
+  .watch-postcards-btn {
+    background: #468372;
+    color: white;
+    font-family: Poppins;
+    margin-bottom: 20px;
+  }
+
+  .close-icon {
+    padding-left: 0.5em;
+    margin-top: 1em;
+  }
+  #myModal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+  }
+}

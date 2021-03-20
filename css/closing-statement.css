@@ -1,0 +1,42 @@
+.closing-statement {
+  display: flex;
+  padding: 5% 5% 0 5%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mwrc-link {
+  color: white;
+}
+page-section,
+.small-section {
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+.closing-statement-p {
+  padding: 20px;
+  color: white;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  align-items: center;
+  max-width: 925px;
+}
+
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+a:focus {
+  color: white;
+  text-decoration: underline;
+}

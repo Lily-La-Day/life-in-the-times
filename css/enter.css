@@ -1,0 +1,73 @@
+.enter-container {
+  
+    margin: 1em;
+    max-width: 99vw;
+    display: flex;
+    height: 99vh;
+    justify-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    align-items: center;
+    padding-left: 1em;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-image: linear-gradient(#2b5348, #62b7a0);
+}
+
+.enter {
+    color: white;
+    font-family: poppins;
+    text-shadow: 1px 1px #2b5348;
+}
+
+.enter-logo {
+    margin-bottom: 12vh;
+}
+
+.enter-container img {
+    display: flex;
+}
+.enter-container h1 {
+line-height: 0.5;
+}
+.enter-logo {
+    justify-self: start;
+    justify-self: flex-start;    
+}
+
+.enter-arrow {
+    display: flex;   
+    align-self: center;
+    width: 5em;
+}
+
+.enter-container .enter-logo {
+    width: 3em;
+}
+
+.enter:hover {
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+    font-family: poppins;
+}
+
+.hide {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 420px) {
+    .enter {
+        font-size: 2em;
+    }
+
+     .enter-arrow {
+        
+        align-self: center;
+        width: 2.5em;
+    }
+    
+
+  }
