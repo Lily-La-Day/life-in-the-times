@@ -1,12 +1,9 @@
-
-.parallax,.parallax-header {
-
+.parallax,
+.parallax-header {
   background-image: url(".././images/paralax-image/Background-Star-Blur.svg");
   min-height: 500px;
   background-attachment: fixed !important;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
-
