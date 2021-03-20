@@ -1,12 +1,7 @@
 #home {
   background-repeat: no-repeat;
   background-attachment: local;
-  opacity: 1; /* 
-  -webkit-transition: background 3s linear;
-  -moz-transition: background 3s linear;
-  -o-transition: background 3s linear;
-  -ms-transition: background 3s linear;
-  transition: background 3s linear; */
+  opacity: 1; 
   -webkit-transition: background-image 3s ease-in-out;
   -moz-transition: background-image 3s ease-in-out;
   -o-transition: background-image 3s ease-in-out;
@@ -76,10 +71,9 @@
   .main-page {
     z-index: 4;
   }
-
   .back-sketch {
     z-index: -1;
-    max-height: 60vh !important;
+
   }
   .parallax-header,
   .parallax-2-container {
