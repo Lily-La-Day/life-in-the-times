@@ -1,7 +1,7 @@
 #home {
   background-repeat: no-repeat;
   background-attachment: local;
-  opacity: 1; 
+  opacity: 1;
   -webkit-transition: background-image 3s ease-in-out;
   -moz-transition: background-image 3s ease-in-out;
   -o-transition: background-image 3s ease-in-out;
