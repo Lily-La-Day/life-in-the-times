@@ -22,8 +22,7 @@ ul#list-container li:hover {
   .l-list1 {
     margin: 0 20px 0 0;
   }
-  .ex-statement-p
-  a {
+  .ex-statement-p a {
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
@@ -35,9 +34,13 @@ ul#list-container li:hover {
     font-size: 26px;
   }
 }
+
+.ex-statement-p {
+  max-width: 925px;
+}
+
 @media only screen and (max-width: 1200px) {
-  .ex-statement-p
-  a {
+  .ex-statement-p a {
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
@@ -60,6 +63,7 @@ ul#list-container li:hover {
   font-size: 22px;
   line-height: 33px;
   align-items: center;
+  max-width: 925px;
 }
 
 .statement-title {

@@ -26,7 +26,7 @@ function toggleAudio() {
 }
 
 const imageSketch = document.querySelector("#home");
-imageSketch.style.backgroundImage = `url('images/header-sketches/Header-Sketch-01.jpg')`;
+imageSketch.style.backgroundImage = `url('images/header-sketches/Header-Sketch-01.png')`;
 document.querySelector(".audio-icon").addEventListener("click", toggleAudio);
 
 let counter = 1;
@@ -34,9 +34,8 @@ function loopSketches() {
   if (counter < 6) {
     setTimeout(function () {
       counter++;
-      imageSketch.style.backgroundImage = `url('images/header-sketches/Header-Sketch-0${counter}.jpg')`;
+      imageSketch.style.backgroundImage = `url('images/header-sketches/Header-Sketch-0${counter}.png')`;
       imageSketch.classList.add("back-sketch");
-      imageSketch.style.height = "80vh";
       imageSketch.style.backgroundPosition = "fixed";
 
       loopSketches();

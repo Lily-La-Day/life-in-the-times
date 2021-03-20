@@ -1,6 +1,8 @@
 .closing-statement {
-  padding: 5% 5% 5% 5%;
   display: flex;
+  padding: 5% 5% 0 5%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .mwrc-link {
@@ -27,6 +29,7 @@ page-section,
   font-size: 22px;
   line-height: 33px;
   align-items: center;
+  max-width: 925px;
 }
 
 a:hover {
