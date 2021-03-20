@@ -4,6 +4,31 @@
   font-size: 14px;
   padding-bottom: 50px;
 }
+.ex-statement-container {
+  padding: 5% 5% 0 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 1200px) {
+  .ex-statement-p {
+    color: white;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    align-items: center;
+    max-width: 925px;
+    display: flex;
+    padding: 5% 5% 0 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .l-list1 {
   margin: 0 20px 0;
 }
@@ -53,6 +78,7 @@ ul#list-container li:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: column;
 }
 .ex-statement-p {
   padding: 25px 20px 5px 20px;
