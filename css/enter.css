@@ -1,4 +1,5 @@
 .enter-container {
+  
     margin: 1em;
     max-width: 99vw;
     display: flex;
@@ -19,11 +20,16 @@
     text-shadow: 1px 1px #2b5348;
 }
 
+.enter-logo {
+    margin-bottom: 12vh;
+}
 
 .enter-container img {
     display: flex;
 }
-
+.enter-container h1 {
+line-height: 0.5;
+}
 .enter-logo {
     justify-self: start;
     justify-self: flex-start;    

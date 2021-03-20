@@ -16,11 +16,11 @@ function playAudio() {
 
 function toggleAudio() {
   if (audio.paused) {
-    document.querySelector(".audio-icon").src = "../images/audio-icon-hero.png";
+    document.querySelector(".audio-icon").src = "../life-in-the-times/images/audio-icon-hero.png";
     audio.play();
   } else {
     document.querySelector(".audio-icon").src =
-      "../images/audio-icon-hero-crossed.png";
+      "../life-in-the-times/images/audio-icon-hero-crossed.png";
     audio.pause();
   }
 }
