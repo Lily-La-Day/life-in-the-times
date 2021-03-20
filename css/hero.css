@@ -1,7 +1,7 @@
 #home {
   background-repeat: no-repeat;
   background-attachment: local;
-  opacity: 1; 
+  opacity: 1;
   -webkit-transition: background-image 3s ease-in-out;
   -moz-transition: background-image 3s ease-in-out;
   -o-transition: background-image 3s ease-in-out;
@@ -47,6 +47,11 @@
   max-height: 3em;
 }
 
+.back-sketch {
+  z-index: -1;
+  max-height: 60vh !important;
+}
+
 @media only screen and (max-width: 500px) {
   .home-section {
     position: relative;
@@ -71,9 +76,11 @@
   .main-page {
     z-index: 4;
   }
+
   .back-sketch {
     z-index: -1;
     height: 70vh;
+
   }
 
   

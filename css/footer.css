@@ -1,6 +1,7 @@
 .footer {
   text-align: center;
   background: rgba(206, 219, 215, 1);
+  max-width: 1044px;
 }
 
 .footer-wrapper {
@@ -13,6 +14,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  max-width: 925px;
 }
 
 .footer-copy {
@@ -85,7 +87,8 @@
   justify-content: flex-end;
 }
 
-#logo1 {
+#logo1,
+#logo10 {
   width: 96%;
 }
 
@@ -119,10 +122,6 @@
 
 #logo9 {
   width: 75%;
-}
-
-#logo10 {
-  width: 96%;
 }
 
 .footer-logo:nth-child(5) {
