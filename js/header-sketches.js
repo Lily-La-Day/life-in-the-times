@@ -34,9 +34,8 @@ function loopSketches() {
   if (counter < 6) {
     setTimeout(function () {
       counter++;
-      //console.log(counter);
       imageSketch.style.backgroundImage = `url('images/header-sketches/Header-Sketch-0${counter}.jpg')`;
-      imageSketch.classList.add("back-sketch");
+      /*    imageSketch.classList.add("back-sketch"); */
       imageSketch.style.height = "80vh";
       imageSketch.style.backgroundPosition = "fixed";
 
