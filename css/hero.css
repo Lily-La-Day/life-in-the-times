@@ -68,7 +68,7 @@
   }
   .back-sketch {
     z-index: -1;
-    /*   max-height: 50vh !important; */
+    max-height: 50vh !important;
   }
   .parallax-header,
   .parallax-2-container {
