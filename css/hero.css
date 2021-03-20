@@ -1,7 +1,7 @@
 #home {
   background-repeat: no-repeat;
   background-attachment: local;
-  opacity: 1; 
+  opacity: 1;
   -webkit-transition: background-image 3s ease-in-out;
   -moz-transition: background-image 3s ease-in-out;
   -o-transition: background-image 3s ease-in-out;
@@ -55,13 +55,13 @@
 @media only screen and (max-width: 500px) {
   .home-section {
     position: relative;
-    min-height: 5vh;
     z-index: 0;
     min-height: 40vh;
   }
   .parallax-2-container {
     position: relative;
     min-height: 40vh;
+    height: 40vh;
     background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
@@ -76,8 +76,12 @@
   .main-page {
     z-index: 4;
   }
-  .parallax-header,
-  .parallax-2-container {
-    background-image: none;
+
+  .back-sketch {
+    z-index: -1;
+    height: 70vh;
+
   }
+
+  
 }
