@@ -1,4 +1,6 @@
-// document.body.click();
+const enterButtons = document.querySelectorAll(".enter");
+const enterContainer = document.querySelector(".enter-container");
+const whole = document.querySelector(".whole");
 
 const enterButtons = document.querySelectorAll(".enter");
 const enterContainer = document.querySelector(".enter-container");
@@ -27,7 +29,6 @@ function toggleAudio() {
 const imageSketch = document.querySelector("#home");
 imageSketch.style.backgroundImage = `url('images/header-sketches/Header-Sketch-01.jpg')`;
 document.querySelector(".audio-icon").addEventListener("click", toggleAudio);
-document.querySelector(".audio-icon").addEventListener("click", toggleAudio);
 
 let counter = 1;
 function loopSketches() {
@@ -35,12 +36,12 @@ function loopSketches() {
     setTimeout(function () {
       counter++;
       imageSketch.style.backgroundImage = `url('images/header-sketches/Header-Sketch-0${counter}.jpg')`;
-      /*    imageSketch.classList.add("back-sketch"); */
+      imageSketch.classList.add("back-sketch");
       imageSketch.style.height = "80vh";
       imageSketch.style.backgroundPosition = "fixed";
 
       loopSketches();
-    }, 5000);
+    }, 7000);
   } else {
     counter = 0;
     loopSketches();
