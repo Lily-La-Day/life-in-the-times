@@ -66,10 +66,9 @@
   .main-page {
     z-index: 4;
   }
-
   .back-sketch {
     z-index: -1;
-    max-height: 60vh !important;
+    max-height: 90vh !important;
   }
   .parallax-header,
   .parallax-2-container {
