@@ -16,8 +16,11 @@ function playAudio() {
 
 function toggleAudio() {
   if (audio.paused) {
+    document.querySelector(".audio-icon").src = "../images/audio-icon-hero.png";
     audio.play();
   } else {
+    document.querySelector(".audio-icon").src =
+      "../images/audio-icon-hero-crossed.png";
     audio.pause();
   }
 }
