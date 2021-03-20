@@ -36,16 +36,10 @@
   align-items: center;
 }
 
-.audio-icon-container {
+.audio-icon {
   max-width: 3em;
   margin-bottom: 35%;
-  /*   max-height: 3em; */
-  display: block;
-  width: 42px;
-  height: 42px;
-  line-height: 42px;
-  background-color: cyan;
-  border-radius: 50%;
+  max-height: 3em;
 }
 
 @media only screen and (max-width: 500px) {
