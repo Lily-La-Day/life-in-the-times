@@ -1,7 +1,7 @@
 #home {
   background-repeat: no-repeat;
   background-attachment: local;
-  /*   opacity: 1;
+  opacity: 1; /* 
   -webkit-transition: background 3s linear;
   -moz-transition: background 3s linear;
   -o-transition: background 3s linear;
