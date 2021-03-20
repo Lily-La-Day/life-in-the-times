@@ -1,7 +1,6 @@
 .footer {
   text-align: center;
   background: rgba(206, 219, 215, 1);
-  max-width: 1044px;
 }
 
 .footer-wrapper {
@@ -14,7 +13,6 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 925px;
 }
 
 .footer-copy {
@@ -27,6 +25,7 @@
   margin-top: 70px;
   margin-bottom: 40px;
   display: inline-block;
+  max-width: 925px;
 }
 
 .back-to-top {
