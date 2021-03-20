@@ -2,10 +2,6 @@ const enterButtons = document.querySelectorAll(".enter");
 const enterContainer = document.querySelector(".enter-container");
 const whole = document.querySelector(".whole");
 
-const enterButtons = document.querySelectorAll(".enter");
-const enterContainer = document.querySelector(".enter-container");
-const whole = document.querySelector(".whole");
-
 enterButtons.forEach((language) =>
   language.addEventListener("click", playAudio)
 );
