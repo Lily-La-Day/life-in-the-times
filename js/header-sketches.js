@@ -1,5 +1,3 @@
-// document.body.click();
-
 const enterButtons = document.querySelectorAll(".enter");
 const enterContainer = document.querySelector(".enter-container");
 const whole = document.querySelector(".whole");
@@ -36,14 +34,13 @@ function loopSketches() {
   if (counter < 6) {
     setTimeout(function () {
       counter++;
-      //console.log(counter);
       imageSketch.style.backgroundImage = `url('images/header-sketches/Header-Sketch-0${counter}.jpg')`;
       imageSketch.classList.add("back-sketch");
       imageSketch.style.height = "80vh";
       imageSketch.style.backgroundPosition = "fixed";
 
       loopSketches();
-    }, 5000);
+    }, 7000);
   } else {
     counter = 0;
     loopSketches();
