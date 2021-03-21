@@ -7,6 +7,15 @@
   -o-transition: background-image 3s ease-in-out;
   transition: background-image 3s ease-in-out;
 }
+#home::before {
+  content: url("images/header-sketches/Header-Sketch-01.png")
+    url("images/header-sketches/Header-Sketch-02.png")
+    url("images/header-sketches/Header-Sketch-03.png")
+    url("images/header-sketches/Header-Sketch-04.png")
+    url("images/header-sketches/Header-Sketch-05.png")
+    url("images/header-sketches/Header-Sketch-06.png");
+  display: none;
+}
 
 .home-section {
   z-index: 0;
@@ -80,8 +89,5 @@
   .back-sketch {
     z-index: -1;
     height: 70vh;
-
   }
-
-  
 }
