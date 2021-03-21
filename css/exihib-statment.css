@@ -56,7 +56,7 @@ ul#list-container li:hover {
   }
 
   #title-ex {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 
@@ -98,7 +98,6 @@ ul#list-container li:hover {
   text-align: center;
   justify-self: center;
   font-size: 1.8em;
-  margin-left: 5%;
   margin-right: 5%;
   padding-left: 5%;
   padding-right: 5%;
