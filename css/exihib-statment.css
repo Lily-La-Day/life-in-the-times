@@ -4,7 +4,7 @@
   font-size: 14px;
 }
 .ex-statement-container {
-  padding: 5% 5% 0 5%;
+  padding: 5% 5% 0% 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -73,7 +73,7 @@ ul#list-container li:hover {
   }
 }
 .ex-statement-container {
-  padding: 5% 5% 30 5%;
+  padding: 5% 5% 2% 5%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
