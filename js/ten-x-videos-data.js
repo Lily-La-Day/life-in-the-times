@@ -2,7 +2,7 @@ export const videoData = [
   { videoId: "sYuqjZ7SiJk", titleOfVideo: "Agnes" },
   { videoId: "uln1C5Tb98Y", titleOfVideo: "Aleena" },
   { videoId: "W4AJF40Ko5c", titleOfVideo: "Bushra" },
-  { videoId: "ntt3zNB6Syw", titleOfVideo: "Comfort & Fakhirya" },
+  { videoId: "ntt3zNB6Syw", titleOfVideo: "Comfort & F" },
   { videoId: "p3VUtS3PzGM", titleOfVideo: "Jabin" },
   { videoId: "0dPt-cJxMqo", titleOfVideo: "Rosemary" },
   {
