@@ -12,11 +12,21 @@ function playAudio() {
   whole.classList.remove("hide");
   enterContainer.classList.add("hide");
   audio.play();
+  document.addEventListener(
+    "scroll",
+    function () {
+      audio.pause();
+      document.querySelector(".audio-icon").src =
+        "../life-in-the-times/images/audio-icon-hero-crossed.png";
+    },
+    { once: true }
+  );
 }
 
 function toggleAudio() {
   if (audio.paused) {
-    document.querySelector(".audio-icon").src = "../life-in-the-times/images/audio-icon-hero.png";
+    document.querySelector(".audio-icon").src =
+      "../life-in-the-times/images/audio-icon-hero.png";
     audio.play();
   } else {
     document.querySelector(".audio-icon").src =
