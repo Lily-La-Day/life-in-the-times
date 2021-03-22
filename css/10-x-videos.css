@@ -72,13 +72,13 @@
 }
 
 .video-row-of-6:nth-child(4) {
-  background-image: url("/life-in-the-times/images/10-x-videos/fakhirya.png");
+  background-image: url("/life-in-the-times/images/10-x-videos/comfort.png");
   background-size: cover;
   background-position: center;
 }
 
 .video-row-of-6:nth-child(4):hover {
-  background-image: url("/life-in-the-times/images/10-x-videos/fakhirya.webp");
+  background-image: url("/life-in-the-times/images/10-x-videos/comfort.webp");
   background-size: cover;
   background-position: center;
 }
