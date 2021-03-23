@@ -20,7 +20,7 @@ function onLanguageClick(event) {
     let lang = event.target.innerHTML;
     let tr2 = document.querySelectorAll(".translations-lang")
     let pArray=[...tr2]
-    let lArr = ["English","Arabic","Urdu", "Kurdish"];
+    let lArr = ["English","عربي","اردو", "کوردی سۆرانی"];
   
     for(let i = 0; i < tr2.length; i++ ) {
         tr2[i].style.display="none";

@@ -2,10 +2,9 @@
   color: white;
   text-align: center;
   font-size: 14px;
-  padding-bottom: 50px;
 }
 .ex-statement-container {
-  padding: 5% 5% 0 5%;
+  padding: 5% 5% 0% 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -74,7 +73,7 @@ ul#list-container li:hover {
   }
 }
 .ex-statement-container {
-  padding: 5% 5% 0 5%;
+  padding: 5% 5% 2% 5%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -83,7 +82,7 @@ ul#list-container li:hover {
 }
 .ex-statement-p {
   align-self: center;
-  padding: 25px 20px 5px 20px;
+  padding: 25px 20px 35px 20px;
   color: white;
   font-family: Poppins;
   font-style: normal;
