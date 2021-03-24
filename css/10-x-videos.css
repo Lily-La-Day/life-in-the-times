@@ -1,12 +1,35 @@
+.wrapper-videoframe-four-videos,
+.wrapper-videoframe-four-videos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.upper-stripe-videoframe {
+  height: 8px;
+  width: 100%;
+  background: #57c9ab;
+}
+.bottom-stripe-videoframe {
+  height: 4px;
+  width: 100%;
+}
+.wrapper-videoframe-six-videos .bottom-stripe-videoframe {
+  background: linear-gradient(180deg, #62b7a0 36.98%, #82d3c0 53.65%);
+}
+.wrapper-videoframe-four-videos .bottom-stripe-videoframe {
+  background: #234e42;
+}
+
 #videos-6-in-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  background: #2b5348;
 }
 
 .video-row-of-6 {
   height: 659px;
-  flex: 1 1 calc(100% / 6);
+  width: calc(100% / 6);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -19,7 +42,7 @@
 }
 
 .video-row-of-6:nth-child(1):hover {
-  background-image: url("/life-in-the-times/images/10-x-videos/agnes.gif");
+  background-image: url("/life-in-the-times/images/10-x-videos/agnes.webp");
   background-size: cover;
   background-position: center;
 }
@@ -31,7 +54,7 @@
 }
 
 .video-row-of-6:nth-child(2):hover {
-  background-image: url("/life-in-the-times/images/10-x-videos/aleena.gif");
+  background-image: url("/life-in-the-times/images/10-x-videos/aleena.webp");
   background-size: cover;
   background-position: center;
 }
@@ -43,19 +66,19 @@
 }
 
 .video-row-of-6:nth-child(3):hover {
-  background-image: url("/life-in-the-times/images/10-x-videos/bushra.gif");
+  background-image: url("/life-in-the-times/images/10-x-videos/bushra.webp");
   background-size: cover;
   background-position: center;
 }
 
 .video-row-of-6:nth-child(4) {
-  background-image: url("/life-in-the-times/images/10-x-videos/fakhirya.png");
+  background-image: url("/life-in-the-times/images/10-x-videos/comfort.png");
   background-size: cover;
   background-position: center;
 }
 
 .video-row-of-6:nth-child(4):hover {
-  background-image: url("/life-in-the-times/images/10-x-videos/fakhirya.gif");
+  background-image: url("/life-in-the-times/images/10-x-videos/comfort.webp");
   background-size: cover;
   background-position: center;
 }
@@ -67,7 +90,7 @@
 }
 
 .video-row-of-6:nth-child(5):hover {
-  background-image: url("/life-in-the-times/images/10-x-videos/jabin.gif");
+  background-image: url("/life-in-the-times/images/10-x-videos/jabin.webp");
   background-size: cover;
   background-position: center;
 }
@@ -79,7 +102,7 @@
 }
 
 .video-row-of-6:nth-child(6):hover {
-  background-image: url("/life-in-the-times/images/10-x-videos/rosemary.gif");
+  background-image: url("/life-in-the-times/images/10-x-videos/rosemary.webp");
   background-size: cover;
   background-position: center;
 }
@@ -88,14 +111,15 @@
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 34px;
   line-height: 146.48%;
   /* or 53px */
   letter-spacing: 0.01em;
   /* #FFFFFF - White */
   color: #ffffff;
   padding-top: 52px;
-  padding-left: 42px;
+  padding-left: 21px;
+  padding-right: 21px;
   margin: 0;
 }
 
@@ -131,7 +155,7 @@
 
 .video-row-of-4 {
   height: 659px;
-  flex: 0 1 25%;
+  width: 25%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -144,7 +168,7 @@
 }
 
 .video-row-of-4:nth-child(1):hover {
-  background-image: url("/life-in-the-times/images/10-x-videos/intro+1.gif");
+  background-image: url("/life-in-the-times/images/10-x-videos/intro+1.webp");
   background-size: cover;
   background-position: center;
 }
@@ -156,7 +180,7 @@
 }
 
 .video-row-of-4:nth-child(2):hover {
-  background-image: url("/life-in-the-times/images/10-x-videos/2+3.gif");
+  background-image: url("/life-in-the-times/images/10-x-videos/2+3.webp");
   background-size: cover;
   background-position: center;
 }
@@ -168,7 +192,7 @@
 }
 
 .video-row-of-4:nth-child(3):hover {
-  background-image: url("/life-in-the-times/images/10-x-videos/4+5.gif");
+  background-image: url("/life-in-the-times/images/10-x-videos/4+5.webp");
   background-size: cover;
   background-position: center;
 }
@@ -180,39 +204,9 @@
 }
 
 .video-row-of-4:nth-child(4):hover {
-  background-image: url("/life-in-the-times/images/10-x-videos/6+7.gif");
+  background-image: url("/life-in-the-times/images/10-x-videos/6+7.webp");
   background-size: cover;
   background-position: center;
-}
-
-@media only screen and (max-width: 1250px) {
-  .video-row-of-6 {
-    flex: 0 25%;
-  }
-
-  #videos-6-in-row {
-    justify-content: center;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .video-row-of-4,
-  .video-row-of-6 {
-    flex: 0 1 calc(100% / 3);
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  .video-row-of-4,
-  .video-row-of-6 {
-    flex: 0 1 50%;
-  }
-}
-
-@media only screen and (max-width: 420px) {
-  .video-row-of-4,
-  .video-row-of-6 {
-    flex: 0 1 100%;
-  }
 }
 
 /* modal & video*/
@@ -264,4 +258,34 @@
   width: 80%;
   height: 80%;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 1310px) {
+  .video-row-of-6 {
+    flex: 0 0 calc(100% / 3);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .video-row-of-6 {
+    flex: 0 0 50%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .video-row-of-6 {
+    flex: 0 0 100%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .video-row-of-4 {
+    flex: 0 0 50%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .video-row-of-4 {
+    flex: 0 0 100%;
+  }
 }

@@ -4,8 +4,8 @@
   z-index: 1;
 }
 
-
-#myModal2 ,#myModal{
+#myModal2,
+#myModal {
   position: fixed;
   left: 0;
   top: 0;
@@ -16,7 +16,6 @@
   background-color: rgba(0, 0, 0, 0.9);
   overflow: hidden;
 }
-
 
 .pcModalContainer,
 .pcModalContainer2 {
@@ -38,6 +37,7 @@
 
 .p-cards:hover {
   opacity: 0.7;
+  transform: scale(1.1);
 }
 
 /* The Modal (background) */
@@ -207,7 +207,7 @@
   font-family: Poppins;
 }
 .watch-postcards-btn:hover {
-  background: #468372;
+  background: #495f59;
   color: white;
   font-family: Poppins;
 }
@@ -224,7 +224,7 @@
   font-family: Poppins;
 }
 .load-more-cards-btn:hover {
-  background: #1c3830;
+  background: #495f59;
   color: white;
   border-radius: 5px;
   font-family: Poppins;
@@ -342,10 +342,10 @@
     width: 80vw;
     height: 60vh;
   }
-  /* #myModal,
-  #myModal2 {
-    margin-top: 30%;
-  } */
+
+  .p-cards:hover {
+    transform: scale(1.1);
+  }
 }
 
 @media (max-width: 500px) {
@@ -374,7 +374,6 @@
   #myModal {
     width: 70%;
     height: 50%;
-
   }
 
   .post-prev-img img {
@@ -391,16 +390,18 @@
     padding-left: 0.5em;
     margin-top: 1em;
   }
- #myModal{
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
-  overflow: hidden;
-}
-
+  #myModal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+  }
+  .p-cards:hover {
+    transform: scale(1.1);
+  }
 }

@@ -19,3 +19,13 @@
     background-color: #1C3830 !important;
     min-width: 85px !important;
 }
+
+
+@media only screen and (max-width: 500px) {
+    #share-button {
+        padding-right: 0;
+        padding-left: 0;
+        font-size: 0.8em;
+    }
+ 
+}

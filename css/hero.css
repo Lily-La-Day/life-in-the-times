@@ -1,15 +1,20 @@
-/* #overlay {
-  position: absolute;
-  z-index: 0;
-  width: 100%;
-  mix-blend-mode: multiply; 
-} */
-
-
 #home {
-
   background-repeat: no-repeat;
   background-attachment: local;
+  opacity: 1;
+  -webkit-transition: background-image 3s ease-in-out;
+  -moz-transition: background-image 3s ease-in-out;
+  -o-transition: background-image 3s ease-in-out;
+  transition: background-image 3s ease-in-out;
+}
+#home::before {
+  content: url("images/header-sketches/Header-Sketch-01.png")
+    url("images/header-sketches/Header-Sketch-02.png")
+    url("images/header-sketches/Header-Sketch-03.png")
+    url("images/header-sketches/Header-Sketch-04.png")
+    url("images/header-sketches/Header-Sketch-05.png")
+    url("images/header-sketches/Header-Sketch-06.png");
+  display: none;
 }
 
 .home-section {
@@ -28,15 +33,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
-#main{
+#main {
   z-index: 0;
   background-image: linear-gradient(#2b5348 55%, #62b7a0 20%, #2b5348);
 }
-
-
 
 .hero-icon-container {
   margin: 5%;
@@ -48,10 +50,44 @@
   align-items: center;
 }
 
-
-
 .audio-icon {
   max-width: 3em;
   margin-bottom: 35%;
   max-height: 3em;
+}
+
+.back-sketch {
+  z-index: -1;
+  max-height: 60vh !important;
+}
+
+@media only screen and (max-width: 500px) {
+  .home-section {
+    position: relative;
+    z-index: 0;
+    min-height: 40vh;
+  }
+  .parallax-2-container {
+    position: relative;
+    min-height: 40vh;
+    height: 40vh;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30vh;
+    z-index: 0;
+  }
+  .audio-icon {
+    max-width: 2em;
+    margin-bottom: 35%;
+    max-height: 2em;
+  }
+  .main-page {
+    z-index: 4;
+  }
+
+  .back-sketch {
+    z-index: -1;
+    height: 70vh;
+  }
 }

@@ -2,8 +2,32 @@
   color: white;
   text-align: center;
   font-size: 14px;
-  padding-bottom: 50px;
 }
+.ex-statement-container {
+  padding: 5% 5% 0% 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 1200px) {
+  .ex-statement-p {
+    color: white;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    align-items: center;
+    max-width: 925px;
+    display: flex;
+    padding: 5% 5% 0 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .l-list1 {
   margin: 0 20px 0;
 }
@@ -22,8 +46,7 @@ ul#list-container li:hover {
   .l-list1 {
     margin: 0 20px 0 0;
   }
-  .ex-statement-p
-  a {
+  .ex-statement-p a {
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
@@ -32,12 +55,16 @@ ul#list-container li:hover {
   }
 
   #title-ex {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
+
+.ex-statement-p {
+  max-width: 925px;
+}
+
 @media only screen and (max-width: 1200px) {
-  .ex-statement-p
-  a {
+  .ex-statement-p a {
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
@@ -46,13 +73,16 @@ ul#list-container li:hover {
   }
 }
 .ex-statement-container {
-  padding: 5% 5% 0 5%;
+  padding: 5% 5% 2% 5%;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: column;
 }
 .ex-statement-p {
-  padding: 25px 20px 5px 20px;
+  align-self: center;
+  padding: 25px 20px 35px 20px;
   color: white;
   font-family: Poppins;
   font-style: normal;
@@ -60,13 +90,13 @@ ul#list-container li:hover {
   font-size: 22px;
   line-height: 33px;
   align-items: center;
+  max-width: 925px;
 }
 
 .statement-title {
   text-align: center;
   justify-self: center;
   font-size: 1.8em;
-  margin-left: 5%;
   margin-right: 5%;
   padding-left: 5%;
   padding-right: 5%;

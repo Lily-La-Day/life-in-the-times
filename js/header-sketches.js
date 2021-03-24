@@ -1,46 +1,55 @@
-// document.body.click();
+const enterButtons = document.querySelectorAll(".enter");
+const enterContainer = document.querySelector(".enter-container");
+const whole = document.querySelector(".whole");
 
-const enterButton = document.querySelector('.enter')
-const enterContainer = document.querySelector('.enter-container')
-const whole = document.querySelector('.whole')
-enterButton.addEventListener("click", playAudio);
+enterButtons.forEach((language) =>
+  language.addEventListener("click", playAudio)
+);
 
-const audio = new Audio("./audio/header/Life in the Time Header_1-2.mp3")
-
+const audio = new Audio("./audio/header/Life in the Time Header_1-2.mp3");
 
 function playAudio() {
-  whole.classList.remove('hide')
-  enterContainer.classList.add('hide')
+  whole.classList.remove("hide");
+  enterContainer.classList.add("hide");
   audio.play();
+  document.addEventListener(
+    "scroll",
+    function () {
+      audio.pause();
+      document.querySelector(".audio-icon").src =
+        "../life-in-the-times/images/audio-icon-hero-crossed.png";
+    },
+    { once: true }
+  );
 }
 
-
 function toggleAudio() {
-  if (audio.paused){
-  audio.play();
+  if (audio.paused) {
+    document.querySelector(".audio-icon").src =
+      "../life-in-the-times/images/audio-icon-hero.png";
+    audio.play();
   } else {
+    document.querySelector(".audio-icon").src =
+      "../life-in-the-times/images/audio-icon-hero-crossed.png";
     audio.pause();
   }
 }
 
-
 const imageSketch = document.querySelector("#home");
-imageSketch.style.backgroundImage = `url('images/header-sketches/Header-Sketch-01.jpg')`;
-document.querySelector('.audio-icon').addEventListener('click', toggleAudio)
-document.querySelector('.audio-icon').addEventListener('click', toggleAudio)
+imageSketch.style.backgroundImage = `url('images/header-sketches/Header-Sketch-01.png')`;
+document.querySelector(".audio-icon").addEventListener("click", toggleAudio);
 
 let counter = 1;
 function loopSketches() {
   if (counter < 6) {
     setTimeout(function () {
       counter++;
-      //console.log(counter);
-      imageSketch.style.backgroundImage = `url('images/header-sketches/Header-Sketch-0${counter}.jpg')`;
-      imageSketch.style.height = '80vh';
-      imageSketch.style.backgroundPosition = 'fixed';
+      imageSketch.style.backgroundImage = `url('images/header-sketches/Header-Sketch-0${counter}.png')`;
+      imageSketch.classList.add("back-sketch");
+      imageSketch.style.backgroundPosition = "fixed";
 
       loopSketches();
-    }, 5000);
+    }, 7000);
   } else {
     counter = 0;
     loopSketches();
