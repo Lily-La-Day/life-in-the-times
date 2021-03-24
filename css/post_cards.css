@@ -37,6 +37,7 @@
 
 .p-cards:hover {
   opacity: 0.7;
+  transform: scale(1.1);
 }
 
 /* The Modal (background) */
@@ -341,10 +342,10 @@
     width: 80vw;
     height: 60vh;
   }
-  /* #myModal,
-  #myModal2 {
-    margin-top: 30%;
-  } */
+
+  .p-cards:hover {
+    transform: scale(1.1);
+  }
 }
 
 @media (max-width: 500px) {
@@ -399,5 +400,8 @@
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.9);
     overflow: hidden;
+  }
+  .p-cards:hover {
+    transform: scale(1.1);
   }
 }
