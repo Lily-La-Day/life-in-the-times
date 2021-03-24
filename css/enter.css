@@ -20,13 +20,7 @@
     text-shadow: 1px 1px #2b5348;
 }
 
-.enter-logo {
-    margin-bottom: 12vh;
-}
 
-.enter-container img {
-    display: flex;
-}
 .enter-container h1 {
 line-height: 0.5;
 }
@@ -42,7 +36,7 @@ line-height: 0.5;
 }
 
 .enter-container .enter-logo {
-    width: 3em;
+    width: 50em;
 }
 
 .enter:hover {
