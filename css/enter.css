@@ -1,5 +1,4 @@
 .enter-container {
-  
     margin: 1em;
     max-width: 99vw;
     display: flex;
@@ -9,7 +8,6 @@
     font-size: 0.8em;
     align-items: center;
     padding-left: 1em;
-    flex-wrap: wrap;
     flex-direction: column;
     background-image: linear-gradient(#2b5348, #62b7a0);
 }
@@ -27,16 +25,13 @@ line-height: 0.5;
 .enter-logo {
     justify-self: start;
     justify-self: flex-start;    
+    width: 70vw;
 }
 
 .enter-arrow {
     display: flex;   
     align-self: center;
     width: 5em;
-}
-
-.enter-container .enter-logo {
-    width: 50em;
 }
 
 .enter:hover {
