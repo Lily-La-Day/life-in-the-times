@@ -1,8 +1,7 @@
 .enter-container {
-    margin: 1em;
+    padding: 2% 0 2% 0;
     max-width: 99vw;
     display: flex;
-    height: 99vh;
     justify-items: center;
     justify-content: center;
     font-size: 0.8em;
