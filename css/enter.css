@@ -1,15 +1,15 @@
 .enter-container {
-    height: 100vh;
-    padding: 2% 0 2% 0;
-    max-width: 99vw;
-    display: flex;
+    padding: 2% 5% 2% 5%;
     justify-items: center;
     justify-content: center;
     font-size: 0.8em;
-    align-items: center;
-    padding-left: 1em;
-    flex-direction: column;
+    text-align: center;
     background-image: linear-gradient(#2b5348, #62b7a0);
+    height: 99.9%;
+}
+
+.enter-logo {
+    width: auto;
 }
 
 .enter {
@@ -22,16 +22,11 @@
 .enter-container h1 {
 line-height: 0.5;
 }
-.enter-logo {
-    justify-self: start;
-    justify-self: flex-start;    
-    width: 70vw;
-}
 
 .enter-arrow {
-    display: flex;   
     align-self: center;
     width: 5em;
+    height: auto;
 }
 
 .enter:hover {
